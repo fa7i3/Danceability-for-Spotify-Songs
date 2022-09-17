@@ -1,5 +1,5 @@
 # Danceability-for-Spotify-Dataset
-### Reason for this topic
+### Reasons for this topic
 * How machine learning can predict the danceability of a song using different factors.
 * How machine learning can predict the danceability of a song
 ### Description of Dataset Source
