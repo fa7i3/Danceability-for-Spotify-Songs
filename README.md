@@ -14,8 +14,7 @@
 * Slack for messaging and zoom meeting on Tuesday, Thursdays and Saturdays
 * Flexible to meet other days if necessary
 
-
-
+### Machine Learning
 
 
 
