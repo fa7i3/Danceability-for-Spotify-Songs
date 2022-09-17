@@ -17,6 +17,17 @@
 ### Machine Learning
 
 
+### Database 
+* Use SQL (PostgreSQL and pgAdmin) to store data into a database
+* tables:
+    * spotify_song_info: general information
+    * spotify_song_features: features to be applied into ML algorithm
+* target: danceability
+* SQL to merge datasets
+    * merged_spotify_song.csv
+* cleaning with Pandas
+ERD is shown below:
+(show ERD here)
 
 
 
