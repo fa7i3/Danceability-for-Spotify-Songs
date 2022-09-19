@@ -1,14 +1,14 @@
 # Danceability-for-Spotify-Songs
 
 ## Team Members
-* **Square**: Faith
-* **Triangle**: Diana
-* **Circle**: Daniel
+* **Square**: Faith (Github Repository)
+* **Triangle**: Diana (Machine Learning Model)
+* **Circle**: Daniel (Database Integration)
 
 ## Communication Protocols: 
-* Slack for messaging 
-* Zoom meeting on Tuesday, Thursdays and Saturdays
-* Flexible to meet other days if necessary
+* Slack for quick and easy communication among team members
+* Zoom meetings on Tuesday, Thursdays and Saturdays
+* Additional meetings on other days if necessary
 
 ## Project Overview
 
@@ -20,8 +20,10 @@ Danceability for Spotify Songs from 1921 to 2020
 * How machine learning can predict the danceability of a song
 
 ### Description of Dataset Source
-* Dataset from Kaggle which was collected from Spotify Web API 
-* Number of columns and rows: 169909 rows X 19 columns
+* Dataset was downloaded from [Kaggle](https://www.kaggle.com/datasets/ektanegi/spotifydata-19212020) that captured the top 2000 songs on Spotify for each year from 1921 to 2020
+* Columns include general song information and [song features](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features) which contain audio feature information for each unique Spotify Id
+* Data was collected from Spotify Web API 
+* Dimension of Original Dataset: 169909 rows by 19 columns
 
 ### Questions we hope to answer
 * How the danceability has changed throughout the years from 1921 to 2020
