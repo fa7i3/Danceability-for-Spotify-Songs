@@ -10,6 +10,11 @@
 * How danceable or energetic a song is?
 * How various factors can predict the danceability of a song.
 
+### Softwares Used
+* Jupyter Notebook
+* ERD (Entity Relationship Diagram) Tool
+* Language (Python)
+
 ### Description of the communication protocols: 
 * Slack for messaging and zoom meeting on Tuesday, Thursdays and Saturdays
 * Flexible to meet other days if necessary
