@@ -15,6 +15,10 @@
 ### Topic
 Danceability for Spotify Songs from 1921 to 2020
 
+### Softwares Used
+* Jupyter Notebook
+* ERD (Entity Relationship Diagram) Tool
+
 ### Reasons for Selected Topic
 * How machine learning can predict the danceability of a song using different factors.
 * How machine learning can predict the danceability of a song
