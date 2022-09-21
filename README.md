@@ -40,7 +40,7 @@ Danceability for Spotify Songs from 1921 to 2020
 
 ## Database Integration
 We plan to use a SQL database (PostgreSQL and pgAdmin) to store our data. Our dataset consists of two tables: *[spotify_song_info.csv](Resources/spotify_song_info.csv)* which contains general information about each song and *[spotify_song_features.csv](Resources/spotify_song_features.csv)* which contains feature columns that we plan to use in our machine learning model. *spotify_song_features.csv* also contains the target column, *danceability*, for our machine learning model. The two tables will be merged into one dataset, *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)*, using SQL and will be cleaned using the Python Pandas library. The Entity Relationship Diagram for the two tables is shown below:  
-![spotify_database_ERD.png](Images/spotify_database_erd.png)
+![spotify_database_ERD.png](Images/ERD_spotify_database.png)
 
 
 
