@@ -1,6 +1,6 @@
 # Danceability-for-Spotify-Songs
 
-## Team Members
+## Team Members:
 * **Square**: Github Repository (Faith)
 * **Triangle**: Machine Learning Model (Diana)
 * **Circle**: Database Integration (Daniel)
