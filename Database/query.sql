@@ -9,3 +9,6 @@ INTO merged_spotify_songs
 FROM spotify_song_info as a
 JOIN spotify_song_features as b
 ON a.id = b.id
+ORDER BY a.release_date, a.id
+
+SELECT * FROM merged_spotify_songs
