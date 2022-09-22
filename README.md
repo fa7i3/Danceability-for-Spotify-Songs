@@ -17,7 +17,8 @@
 ### Softwares Used
 * Jupyter Notebook
 * ERD (Entity Relationship Diagram) Tool
-* Language (Python)
+* Languages (Python, SQL)
+* pgAdmin
 
 ### Reasons for Selected Topic
 * How machine learning can predict the danceability of a song using different factors.
