@@ -22,8 +22,9 @@
 * Dependencies (sqlalchemy, Pandas)
 
 ### Reasons for Selected Topic
-* How machine learning can predict the danceability of a song using different factors.
-* How machine learning can predict the danceability of a song
+* We were interested in determining how the danceability of songs have changed over time.
+* Given that there were 188 million Spotify premium subscribers in the second quarter of 2022, we decided to use data retrieved from Spotify Web API. 
+* We also wanted to find out how machine learning can predict the danceability of a song using different factors.
 
 ### Description of Dataset Source
 * Dataset was downloaded from [Kaggle](https://www.kaggle.com/datasets/ektanegi/spotifydata-19212020) and captured the top 2000 songs on Spotify for each year from 1921 to 2020
@@ -38,7 +39,7 @@
 * How various factors can predict the danceability of a song.
 
 ## Machine Learning Model
-A machine learning models was created to make predictions on the danceability of spotify songs. 
+A machine learning model was created to make predictions on the danceability of spotify songs. 
 
 For the data preparation we checked for null values and duplicate values. Moved all non-numerical values to a second dataframe and kept all numerical values on the main dataframe with the ID column as the index. 
 
@@ -62,10 +63,12 @@ The accuracy scores and classification report for our machine learning model are
 ## Database
 We plan to use a SQL database (PostgreSQL and pgAdmin) to store our data. Our dataset consists of two tables: *[spotify_song_info.csv](Resources/spotify_song_info.csv)* which contains general information about each song and *[spotify_song_features.csv](Resources/spotify_song_features.csv)* which contains feature columns that we plan to use in our machine learning model. *spotify_song_features.csv* also contains the target column, *danceability*, for our machine learning model. The two tables will be cleaned using the Python Pandas library and merged into one dataset, *merged_spotify_songs.csv*, using SQL.   
 
+In *[preprocessing_dataset.ipynb](Database/preprocessing_dataset.ipynb)*, the two tables are examined, cleaned, and sent to a PostgreSQL database via a connection string using SQLAlchemy. Then, a *[query](Database/query.sql)* was designed to join the two tables into *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)*. 
+
 The Entity Relationship Diagram for the two tables is shown below:  
 ![spotify_database_ERD.png](Images/ERD_spotify_database.png)
 
-In *[preprocessing_dataset.ipynb](Database/preprocessing_dataset.ipynb)*, the two tables are examined, cleaned, and sent to a PostgreSQL database via a connection string using SQLAlchemy. Then, a *[query](Database/query.sql)* was designed to join the two tables into *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)*. 
+
 
 
 
