@@ -39,7 +39,7 @@
 * How various factors can predict the danceability of a song.
 
 ## Machine Learning Model
-A machine learning models was created to make predictions on the danceability of spotify songs. 
+A machine learning model was created to make predictions on the danceability of spotify songs. 
 
 For the data preparation we checked for null values and duplicate values. Moved all non-numerical values to a second dataframe and kept all numerical values on the main dataframe with the ID column as the index. 
 
