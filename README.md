@@ -1,6 +1,6 @@
 # Danceability-for-Spotify-Songs
 
-## Team Members
+## Team Members:
 * **Square**: Github Repository (Faith)
 * **Triangle**: Machine Learning Model (Diana)
 * **Circle**: Database Integration (Daniel)
@@ -17,7 +17,9 @@
 ### Softwares Used
 * Jupyter Notebook
 * ERD (Entity Relationship Diagram) Tool
-* Language (Python)
+* pgAdmin
+* Languages (Python, SQL)
+* Dependencies (sqlalchemy, Pandas)
 
 ### Reasons for Selected Topic
 * How machine learning can predict the danceability of a song using different factors.
