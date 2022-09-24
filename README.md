@@ -66,9 +66,15 @@ We plan to use a SQL database (PostgreSQL and pgAdmin) to store our data. Our da
 In *[preprocessing_dataset.ipynb](Database/preprocessing_dataset.ipynb)*, the two tables are examined, cleaned, and sent to a PostgreSQL database via a connection string using SQLAlchemy. Then, a *[query](Database/query.sql)* was designed to join the two tables into *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)*. 
 
 The Entity Relationship Diagram for the two tables is shown below:  
-![spotify_database_ERD.png](Images/ERD_spotify_database.png)
+<img src="Images/ERD_spotify_database.png" width=472>
 
+## Links
 
+### Link to Dashboard
+(TBD)
+
+### Link to Google Slides Presentation
+(TBD)
 
 
 
