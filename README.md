@@ -68,7 +68,13 @@ In *[preprocessing_dataset.ipynb](Database/preprocessing_dataset.ipynb)*, the tw
 The Entity Relationship Diagram for the two tables is shown below:  
 ![spotify_database_ERD.png](Images/ERD_spotify_database.png)
 
+## Links
 
+### Link to Dashboard
+(TBD)
+
+### Link to Google Slides Presentation
+(TBD)
 
 
 
