@@ -47,9 +47,31 @@ A machine learning model was created to make predictions on the danceability of 
 For the data preparation we checked for null values and duplicate values. Moved all non-numerical values to a second dataframe and kept all numerical values on the main dataframe with the ID column as the index. 
 
 ### Feature Engineering and Selection
+The following columns from the *merged_spotify_songs.csv* dataset were selected to be features for the machine learning models:
+* acousticness
+* danceability (target)
+* energy
+* explicit
+* instrumentalness
+* key
+* liveness
+* loudness_scaled
+* mode
+* popularity
+* speechiness
+* tempo_scaled
+* valence
 
-### Machine Learning Models 
-The following machine learning models were incorporated in 
+### Machine Learning Models - Choice, Benefits, and Limitations
+The following machine learning models were incorporated in [machine_learning_models.ipynb](Machine Learning Model/machine_learning_models.ipynb):
+
+1. Logistic Regression
+2. Decision Tree
+3. Balanced Random Forest Classifier
+4. Easy Ensemble AdaBoost Classifier
+5. Deep Neural Network
+
+Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model both have the top 2 accuracies of greater-than 80%. Currently our models are unable to exceed an accuracy of 81%. Further improvements to the model and the preprocessing steps will be performed throughout the duration of the project.  
 
 ### Steps
 To create the supervised model we followed these steps: 
@@ -62,7 +84,6 @@ To create the supervised model we followed these steps:
 6.	Make predictions with y_pred = model.predict(X).
 7.	Validate the model with accuracy_score().
 
-
 ### Sample Machine Learning Model: Logistic Regression
 The accuracy scores and classification report for our Logistic Regression model are shown below:
 
@@ -70,7 +91,6 @@ The accuracy scores and classification report for our Logistic Regression model 
 - It achieved an average F-score of 0.76 
 
 <img width="472" alt="Screen Shot 2022-09-21 at 6 23 45 PM" src="https://user-images.githubusercontent.com/104380112/191621511-8ebe750c-8c52-4bf6-a94d-90d1a595bc64.png">
-
 
 ## Database
 We plan to use a SQL database (PostgreSQL and pgAdmin) to store our data. Our dataset consists of two tables: *[spotify_song_info.csv](Resources/spotify_song_info.csv)* which contains general information about each song and *[spotify_song_features.csv](Resources/spotify_song_features.csv)* which contains feature columns that we plan to use in our machine learning model. *spotify_song_features.csv* also contains the target column, *danceability*, for our machine learning model. The two tables will be cleaned using the Python Pandas library and merged into one dataset, *merged_spotify_songs.csv*, using SQL.   
