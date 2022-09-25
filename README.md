@@ -63,7 +63,7 @@ The following columns from the *merged_spotify_songs.csv* dataset were selected 
 * valence
 
 ### Machine Learning Models - Choice, Benefits, and Limitations
-The following machine learning models were incorporated in [machine_learning_models.ipynb](Machine Learning Model/machine_learning_models.ipynb):
+The following machine learning models were incorporated in [machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb):
 
 1. Logistic Regression
 2. Decision Tree
