@@ -107,7 +107,7 @@ The Entity Relationship Diagram for the two tables is shown below:
 (TBD)
 
 ### Link to Google Slides Presentation
-[Presentation](https://docs.google.com/presentation/d/1RMSF_BXDAgTwE9qo8uxU8KE3x-ofv_OX20-ySsd4kcU/edit?usp=sharing)
+[Presentation](https://docs.google.com/presentation/d/1SLyJo5VTJr1ISsJsDj2ul_97DUWQovaDkD5HBMjirlo/edit?usp=sharing)
 
 
 
