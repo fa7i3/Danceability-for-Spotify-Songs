@@ -1,9 +1,9 @@
 # Danceability-for-Spotify-Songs
 
 ## Team Members:
-* **Square**: Github Repository (Faith)
-* **Triangle**: Machine Learning Model (Diana)
-* **Circle**: Database Integration (Daniel)
+* Faith: Github Repository
+* Daniel: Machine Learning Model
+* Diana: Database Integration
 
 ## Communication Protocols: 
 * Slack for quick and easy communication among team members
