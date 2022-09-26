@@ -1,4 +1,4 @@
-# Danceability-for-Spotify-Songs
+# Danceability-of-Spotify-Songs
 
 ## Team Members:
 * Faith: Github Repository
@@ -12,7 +12,7 @@
 
 ## Project Overview
 
-### Topic: Danceability for Spotify Songs from 1921 to 2020
+### Topic: Danceability of Spotify Songs from 1921 to 2020
 
 ### Softwares Used
 * Jupyter Notebook
@@ -107,8 +107,7 @@ The Entity Relationship Diagram for the two tables is shown below:
 (TBD)
 
 ### Link to Google Slides Presentation
-(TBD)
-
+[Presentation](https://docs.google.com/presentation/d/1SLyJo5VTJr1ISsJsDj2ul_97DUWQovaDkD5HBMjirlo/edit?usp=sharing)
 
 
 
