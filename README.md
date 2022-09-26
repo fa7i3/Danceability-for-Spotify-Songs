@@ -1,9 +1,9 @@
 # Danceability-for-Spotify-Songs
 
 ## Team Members:
-* **Square**: Github Repository (Faith)
-* **Triangle**: Machine Learning Model (Diana)
-* **Circle**: Database Integration (Daniel)
+* Faith: Github Repository
+* Daniel: Machine Learning Model
+* Diana: Database Integration
 
 ## Communication Protocols: 
 * Slack for quick and easy communication among team members
@@ -40,21 +40,53 @@
 * How various factors can predict the danceability of a song.
 
 ## Machine Learning Model
-A machine learning model was created to make predictions on the danceability of spotify songs. 
 
+### Purpose
+A machine learning model was created to make predictions on the danceability of spotify songs. The target, danceability, was converted into a classification problem during the database preprocessing phase. Therefore, classification machine learning models will examine the features as the input (X) and attempt to predict the danceability as the output (y). 
+
+### Data Preprocessing
 For the data preparation we checked for null values and duplicate values. Moved all non-numerical values to a second dataframe and kept all numerical values on the main dataframe with the ID column as the index. 
 
+### Feature Engineering and Selection
+The following columns from the *merged_spotify_songs.csv* dataset were selected to be features for the machine learning models:
+* acousticness
+* danceability (target)
+* energy
+* explicit
+* instrumentalness
+* key
+* liveness
+* loudness_scaled
+* mode
+* popularity
+* speechiness
+* tempo_scaled
+* valence
+
+### Machine Learning Models - Choice, Benefits, and Limitations
+The following machine learning models were incorporated in [machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb):
+
+1. Logistic Regression
+2. Decision Tree
+3. Balanced Random Forest Classifier
+4. Easy Ensemble AdaBoost Classifier
+5. Deep Neural Network
+
+Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model both have the top 2 accuracies of greater-than 80%. Currently our models are unable to exceed an accuracy of 81%. Further improvements to the model and the preprocessing steps will be performed throughout the duration of the project.  
+
+### Steps
 To create the supervised model we followed these steps: 
 
 1.	Split the data into input (X) and output (y) with danceability as the target feature
 2.  Split the Data into Training and Testing
 3.  Oversample using the RandomOverSampler
-2.	Create a model with model = LinearRegression().
-3.	Train the model with model.fit(X,y).
-4.	Make predictions with y_pred = model.predict(X).
-5.	Validate the model with accuracy_score().
+4.	Define a model (e.g model = LogisticRegression())
+5.	Train the model with model.fit(X,y).
+6.	Make predictions with y_pred = model.predict(X).
+7.	Validate the model with accuracy_score().
 
-The accuracy scores and classification report for our machine learning model are shown below:
+### Sample Machine Learning Model: Logistic Regression
+The accuracy scores and classification report for our Logistic Regression model are shown below:
 
 - Accuracy score = 0.76. This model has a 76% of accuracy at predicting danceability
 - It achieved an average F-score of 0.76 
