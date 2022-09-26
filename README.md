@@ -72,7 +72,7 @@ The following machine learning models were incorporated in [machine_learning_mod
 4. Easy Ensemble AdaBoost Classifier
 5. Deep Neural Network
 
-Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model both have the top 2 accuracies of greater-than 80%. Currently our models are unable to exceed an accuracy of 81%. Further improvements to the model and the preprocessing steps will be performed throughout the duration of the project.  
+Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model have the two highest accuracies of 80+%. Currently our models are unable to exceed an accuracy of 81%. Further improvements to the model and the preprocessing steps will be performed throughout the duration of the project.  
 
 ### Steps
 To create the supervised model we followed these steps: 
