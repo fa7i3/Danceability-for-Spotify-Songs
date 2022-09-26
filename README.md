@@ -22,15 +22,16 @@
 * Dependencies (sqlalchemy, Pandas)
 
 ### Reasons for Selected Topic
-* We were interested in determining how the danceability of songs have changed over time.
-* Given that there were 188 million Spotify premium subscribers in the second quarter of 2022, we decided to use data retrieved from Spotify Web API. 
-* We also wanted to find out how machine learning can predict the danceability of a song using different factors.
+
+- **Mutual Interest** - Music is a popular topic and a common interest amongst the team. Although we like different genres we all listen to music on a daily basis and has become an important factor in our lives
+- **Growing Industry** - The music industry is continuously growing and nhas become more accessible than ever with multiple streaming options. Spotify recorded 188 million Spotify premium subscribers in the second quarter of 2022 and has 60,000 songs being uploaded every day
+- **Interested in Learning** - How the danceability of songs have changed over time and if a machine learning can predict the danceability of a song based on different factors
 
 ### Description of Dataset Source
 * Dataset was downloaded from [Kaggle](https://www.kaggle.com/datasets/ektanegi/spotifydata-19212020) and captured the top 2000 songs on Spotify for each year from 1921 to 2020
 * Columns include general song information and [song features](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features) which contain audio feature information for each unique Spotify Id
 * Data was collected from Spotify Web API 
-* Dimension of Original Dataset: 169909 rows by 19 columns
+* Dimension of Original Dataset: 169,909 rows by 19 columns
 
 ### Questions we hope to answer
 * Can machine learning models predict the danceability of Spotify songs using audio feature information?
