@@ -65,7 +65,7 @@ The following columns from the *merged_spotify_songs.csv* dataset were selected 
 | key | key the track is in (i.e 0 = C, 1 = C#/D♭, 2 = D, 3 = D#/E♭, ... , 11 = B) |
 | liveness | detects presence of audience |
 | loudness_scaled | scaled loudness of track in dB |
-| mode | modality of a track (major(1) or minor(0)) |
+| mode | modality of a track (1 = major,  0 = minor) |
 | popularity | calculated by total number of plays and how recent plays are |
 | speechiness | detects presence of spoken words |
 | tempo_scaled | scaled tempo of track in BPM | 
