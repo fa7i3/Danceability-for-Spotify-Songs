@@ -18,8 +18,9 @@
 * Jupyter Notebook
 * ERD (Entity Relationship Diagram) Tool
 * pgAdmin
+* Tableau Public
 * Languages (Python, SQL)
-* Dependencies (sqlalchemy, Pandas)
+* Dependencies (sqlalchemy, Pandas, TensorFlow, Scikit-learn)
 
 ### Reasons for Selected Topic
 
@@ -101,10 +102,23 @@ In *[preprocessing_dataset.ipynb](Database/preprocessing_dataset.ipynb)*, the tw
 The Entity Relationship Diagram for the two tables is shown below:  
 <img src="Images/ERD_spotify_database.png" width=472>
 
+## Tableau
+The picture below contains the following information:
+* Number of songs in the dataset;
+* Danceablity over the years;
+* Factors affecting danceability.
+
+
+![tableau dashboard](https://user-images.githubusercontent.com/104453593/192433022-b7a6dc6b-905f-4f5a-9d9c-e42f82dfafe9.PNG)
+
+
+According to the picture above, there are 169,909 songs in the spotify dataset and danceability increased throughout the years (from 1921-2020). 
+According to the piechart in the picture above, the darker the green color, the higher the danceability which shows that danceability increased throughout the years (from 1921-2020). The scatter plot shows that the higher the Energy and Tempo, the higher the danceability of the song and Instrumentalness of a song has little or no effect on its danceability.
+
 ## Links
 
 ### Link to Dashboard
-(TBD)
+[Tableau Dashboard](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyDanceabilityDashboard/Dashboard2?publish=yes)
 
 ### Link to Google Slides Presentation
 [Presentation](https://docs.google.com/presentation/d/1SLyJo5VTJr1ISsJsDj2ul_97DUWQovaDkD5HBMjirlo/edit?usp=sharing)
