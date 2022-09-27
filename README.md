@@ -105,7 +105,7 @@ The Entity Relationship Diagram for the two tables is shown below:
 ## Links
 
 ### Link to Dashboard
-[Tableau Dashboard](https://public.tableau.com/app/profile/faith.emenike/viz/BootCampProject2022/DanceabilityStory?publish=yes)
+[Tableau Dashboard](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyDanceabilityDashboard/Dashboard2?publish=yes))
 
 ### Link to Google Slides Presentation
 [Presentation](https://docs.google.com/presentation/d/1SLyJo5VTJr1ISsJsDj2ul_97DUWQovaDkD5HBMjirlo/edit?usp=sharing)
