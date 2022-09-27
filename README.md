@@ -43,7 +43,7 @@
 ## Machine Learning Model
 
 ### Purpose
-A machine learning model was created to make predictions on the danceability of spotify songs. The target, danceability, was converted into a classification problem during the database preprocessing phase. Therefore, classification machine learning models will examine the features as the input (X) and attempt to predict the danceability as the output (y). 
+A machine learning model was created to make predictions on the danceability of spotify songs. The target, danceability, was converted into a classification problem during the database preprocessing phase. Therefore, a classification machine learning model will examine the features as the input (X) and attempt to predict the danceability as the output (y). The machine learning model code can be found here: [machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb). 
 
 ### Data Preprocessing
 For the data preprocessing phase, we:
@@ -53,8 +53,10 @@ For the data preprocessing phase, we:
 * encoded the key column with Scikit-learn's OneHotEncoder module
 
 ### Feature Engineering and Selection
-The following columns from the *merged_spotify_songs.csv* dataset were selected to be features for the machine learning models:
+The following columns from the *merged_spotify_songs.csv* dataset were selected to be features for the machine learning model:
+
 | feature | description |
+| ------- | ----------- |
 | acousticness | confidence measure of whether the track is acoustic |
 | danceability (target) | whether the track is suitable for dancing |
 | energy | perceptual measure of intensity and activity |
@@ -63,20 +65,20 @@ The following columns from the *merged_spotify_songs.csv* dataset were selected 
 | key | key the track is in (i.e 0 = C, 1 = C#/D♭, 2 = D, 3 = D#/E♭, ... , 11 = B) |
 | liveness | detects presence of audience |
 | loudness_scaled | scaled loudness of track in dB |
-| mode | modality of a track (major(1) or minor(0))|
+| mode | modality of a track (major(1) or minor(0)) |
 | popularity | calculated by total number of plays and how recent plays are |
 | speechiness | detects presence of spoken words |
 | tempo_scaled | scaled tempo of track in BPM | 
 | valence | describes the musical positiveness conveyed by a track | 
-<a name="footnote1">1</a>Definitions sourced from [Spotify Audio Feature Reference](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)
+[^1]: Definitions sourced from [Spotify Audio Feature Reference](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)
 
-A combination of all the audio features in the above table could determine the danceability of a song. 
+All the above audio features were selected because of their numerical values and strong probability for predicting danceability. 
 
 ### How Data was Split into Training and Testing
 Data is typically split with the training set containing 70-80% of the data and the testing set containing 20-30% of the data. In our machine learning model, we chose to split the data into 75% training and 25% testing. 
 
 ### Machine Learning Models - Choice, Benefits, and Limitations
-The following machine learning models were incorporated in [machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb):
+The following supervised, classification machine learning models were incorporated in [machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb):
 
 1. Logistic Regression
 2. Decision Tree
@@ -84,20 +86,20 @@ The following machine learning models were incorporated in [machine_learning_mod
 4. Easy Ensemble AdaBoost Classifier
 5. Deep Neural Network
 
-Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model have the two highest accuracies of 80+%. Currently our models are unable to exceed an accuracy of 81%. Further improvements to the model and the preprocessing steps will be performed throughout the duration of the project.  
+Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model have the two highest accuracies of 80+%. Our models are currently unable to exceed an accuracy of 81%. Further improvements to the model and the preprocessing steps will be performed throughout the duration of the project.
 
 ### Steps
-To create the supervised model we followed these steps: 
+The following steps summarize how we created supervised machine learning model: 
 
 1.	Split the data into input (X) and output (y) with danceability as the target feature
-2.  Split the Data into Training and Testing
+2.  Split the Data into Training and Testing (75%/25%)
 3.  Oversample using the RandomOverSampler
 4.	Define a model (e.g model = LogisticRegression())
-5.	Train the model with model.fit(X,y).
-6.	Make predictions with y_pred = model.predict(X).
-7.	Validate the model with accuracy_score().
+5.	Train the model with model.fit(X_resampled,y_resampled)
+6.	Make predictions with y_pred = model.predict(X_test)
+7.	Validate the model with balanced_accuracy_score() and classification_report()
 
-### Sample Machine Learning Model: Logistic Regression
+### Sample Results: Logistic Regression
 The accuracy scores and classification report for our Logistic Regression model are shown below:
 
 - Accuracy score = 0.76. This model has a 76% of accuracy at predicting danceability
