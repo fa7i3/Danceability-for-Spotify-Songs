@@ -117,8 +117,8 @@ According to the piechart in the picture above, the darker the green color, the 
 
 ## Links
 
-### Link to Dashboard
-[Tableau Dashboard](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyDanceabilityDashboard/Dashboard2?publish=yes)
+### Link to Tableau Story
+[Tableau Story](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyChangeinDanceabilityDashboard/Story2?publish=yes)
 
 ### Link to Google Slides Presentation
 [Presentation](https://docs.google.com/presentation/d/1SLyJo5VTJr1ISsJsDj2ul_97DUWQovaDkD5HBMjirlo/edit?usp=sharing)
