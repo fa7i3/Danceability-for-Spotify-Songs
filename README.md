@@ -18,8 +18,9 @@
 * Jupyter Notebook
 * ERD (Entity Relationship Diagram) Tool
 * pgAdmin
+* Tableau Public
 * Languages (Python, SQL)
-* Dependencies (sqlalchemy, Pandas)
+* Dependencies (sqlalchemy, Pandas, TensorFlow, Scikit-learn)
 
 ### Reasons for Selected Topic
 
