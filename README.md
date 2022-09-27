@@ -55,8 +55,8 @@ For the data preprocessing phase, we:
 ### Feature Engineering and Selection
 The following columns from the *merged_spotify_songs.csv* dataset were selected to be features for the machine learning model:
 
-| feature | description |
-| ------- | ----------- |
+| Feature | Description |
+| :------ | :---------- |
 | acousticness | confidence measure of whether the track is acoustic |
 | danceability (target) | whether the track is suitable for dancing |
 | energy | perceptual measure of intensity and activity |
@@ -70,12 +70,11 @@ The following columns from the *merged_spotify_songs.csv* dataset were selected 
 | speechiness | detects presence of spoken words |
 | tempo_scaled | scaled tempo of track in BPM | 
 | valence | describes the musical positiveness conveyed by a track | 
-[^1]: Definitions sourced from [Spotify Audio Feature Reference](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)
 
-All the above audio features were selected because of their numerical values and strong probability for predicting danceability. 
+All the above audio features were selected because of their numerical values and strong probability for predicting danceability. Definitions for the above audio features were sourced from [Spotify Audio Feature Reference](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)
 
 ### How Data was Split into Training and Testing
-Data is typically split with the training set containing 70-80% of the data and the testing set containing 20-30% of the data. In our machine learning model, we chose to split the data into 75% training and 25% testing. 
+Data is typically split with the training set containing 70-80% of the data and the testing set containing 20-30% of the data. In our machine learning model, we chose to split the data into **75% training and 25% testing**. 
 
 ### Machine Learning Models - Choice, Benefits, and Limitations
 The following supervised, classification machine learning models were incorporated in [machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb):
