@@ -46,23 +46,34 @@
 A machine learning model was created to make predictions on the danceability of spotify songs. The target, danceability, was converted into a classification problem during the database preprocessing phase. Therefore, classification machine learning models will examine the features as the input (X) and attempt to predict the danceability as the output (y). 
 
 ### Data Preprocessing
-For the data preparation we checked for null values and duplicate values. Moved all non-numerical values to a second dataframe and kept all numerical values on the main dataframe with the ID column as the index. 
+For the data preprocessing phase, we:
+* verified the datatypes for each column
+* checked for null values and duplicate values
+* moved all non-numerical values to a second dataframe and kept all numerical values on the main dataframe
+* encoded the key column with Scikit-learn's OneHotEncoder module
 
 ### Feature Engineering and Selection
 The following columns from the *merged_spotify_songs.csv* dataset were selected to be features for the machine learning models:
-* acousticness
-* danceability (target)
-* energy
-* explicit
-* instrumentalness
-* key
-* liveness
-* loudness_scaled
-* mode
-* popularity
-* speechiness
-* tempo_scaled
-* valence
+| feature | description |
+| acousticness | confidence measure of whether the track is acoustic |
+| danceability (target) | whether the track is suitable for dancing |
+| energy | perceptual measure of intensity and activity |
+| explicit | whether the track contains explicit language | 
+| instrumentalness | predicts whether a track contains no vocals |
+| key | key the track is in (i.e 0 = C, 1 = C#/D♭, 2 = D, 3 = D#/E♭, ... , 11 = B) |
+| liveness | detects presence of audience |
+| loudness_scaled | scaled loudness of track in dB |
+| mode | modality of a track (major(1) or minor(0))|
+| popularity | calculated by total number of plays and how recent plays are |
+| speechiness | detects presence of spoken words |
+| tempo_scaled | scaled tempo of track in BPM | 
+| valence | describes the musical positiveness conveyed by a track | 
+<a name="footnote1">1</a>Definitions sourced from [Spotify Audio Feature Reference](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)
+
+A combination of all the audio features in the above table could determine the danceability of a song. 
+
+### How Data was Split into Training and Testing
+Data is typically split with the training set containing 70-80% of the data and the testing set containing 20-30% of the data. In our machine learning model, we chose to split the data into 75% training and 25% testing. 
 
 ### Machine Learning Models - Choice, Benefits, and Limitations
 The following machine learning models were incorporated in [machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb):
