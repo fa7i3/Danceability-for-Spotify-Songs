@@ -102,6 +102,13 @@ In *[preprocessing_dataset.ipynb](Database/preprocessing_dataset.ipynb)*, the tw
 The Entity Relationship Diagram for the two tables is shown below:  
 <img src="Images/ERD_spotify_database.png" width=472>
 
+## Dashboard
+We plan to use Tableau to create the final dashboard for the project. Few reasons why Tableau will be used are:
+* Easy to use;
+* It is an effetcive tool used to quickly create data visualizations;
+* It can transform data into an engaging story that can be easily understood by the audience.
+The final dashboard will show the number of songs, how danceability has changed throughout the years and show some factors that affects it. 
+
 ## Tableau
 The picture below contains the following information:
 * Number of songs in the dataset: According to the picture below, there are 169,909 songs in the spotify dataset.
