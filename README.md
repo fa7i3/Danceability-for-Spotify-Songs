@@ -105,7 +105,16 @@ The Entity Relationship Diagram for the two tables is shown below:
 ## Tableau
 The picture below contains the following information:
 * Number of songs in the dataset: According to the picture below, there are 169,909 songs in the spotify dataset.
+
+![number of songs](https://user-images.githubusercontent.com/104453593/192681719-56d25d32-cfad-459d-a7e2-7444d42bea6a.PNG)
+
+
 * Danceablity over the years: According to the linechart below, the darker the green color, the higher the danceability which shows that danceability has increased throughout the years (from 1921-2020).
+
+![danceability over the years](https://user-images.githubusercontent.com/104453593/192681753-690933fb-c42d-4417-a7dd-377e4d7e3e20.PNG)
+
+
+
 * Factors affecting danceability.
 
  
