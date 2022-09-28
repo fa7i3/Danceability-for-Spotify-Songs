@@ -107,6 +107,7 @@ We plan to use Tableau to create the final dashboard for the project. Few reason
 * Easy to use;
 * It is an effetcive tool used to quickly create data visualizations;
 * It can transform data into an engaging story that can be easily understood by the audience.
+
 The final dashboard will show the number of songs, how danceability has changed throughout the years and show some factors that affects it. 
 
 ## Tableau
