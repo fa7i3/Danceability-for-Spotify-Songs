@@ -52,7 +52,12 @@ For the data preprocessing phase, we:
 * moved all non-numerical values to a second dataframe and kept all numerical values on the main dataframe
 * encoded the key column with Scikit-learn's OneHotEncoder module
 
-### Feature Engineering and Selection
+### Feature Engineering
+* talk about encoding 
+* scaling during preprocessing, loudness and tempo
+* scaling after X/y spliting
+
+### Feature Selection
 The following columns from the *merged_spotify_songs.csv* dataset were selected to be features for the machine learning model:
 
 | Feature | Description |
@@ -73,8 +78,9 @@ The following columns from the *merged_spotify_songs.csv* dataset were selected 
 
 All the above audio features were selected because of their numerical values and strong probability for predicting danceability. Definitions for the above audio features were sourced from [Spotify Audio Feature Reference](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)
 
+
 ### How Data was Split into Training and Testing
-Data is typically split with the training set containing 70-80% of the data and the testing set containing 20-30% of the data. In our machine learning model, we chose to split the data into **75% training and 25% testing**. 
+In our machine learning model, we chose to split the data into **75% training and 25% testing**. 
 
 ### Machine Learning Models - Choice, Benefits, and Limitations
 The following supervised, classification machine learning models were incorporated in [machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb):
