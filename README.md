@@ -78,7 +78,7 @@ The following columns from the *[merged_spotify_songs.csv](Resources/merged_spot
 | tempo_scaled | scaled tempo of track in BPM | 
 | valence | describes the musical positiveness conveyed by a track | 
 
-All the above audio features were selected because of their numerical values and strong probability for predicting danceability. Definitions for the above audio features were sourced from *[Spotify Audio Feature Reference](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)*
+All the above audio features were selected because of their numerical values and strong probability for predicting danceability. Definitions for the above audio features were sourced from the *[Spotify Audio Feature Reference](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)*.
 
 ### How Data was Split into Training and Testing
 In our machine learning model, we chose to split the data into 75% training and 25% testing. 
@@ -92,7 +92,7 @@ The following supervised, classification machine learning models were incorporat
 4. Easy Ensemble AdaBoost Classifier
 5. Deep Neural Network
 
-Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model have the two highest accuracies of 80+%. Our models are currently unable to exceed an accuracy of 81%. Further improvements to the model and the preprocessing steps will be performed throughout the duration of the project.
+Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model have the two highest accuracies of 80+%. Our models are currently unable to exceed an accuracy of 82%. Further improvements to the model and the preprocessing steps will be performed throughout the duration of the project.
 
 ### Steps
 The following steps summarize how we created a supervised machine learning model: 
@@ -104,7 +104,7 @@ The following steps summarize how we created a supervised machine learning model
 5.	Make predictions with: y_pred = model.predict(X_test)
 6.	Validate the model with: confusion_matrix(), balanced_accuracy_score(), and classification_report()
 
-### Sample Results: Logistic Regression
+### Sample Results: Balanced Random Forest Classifier
 The accuracy scores and classification report for our sample Random Forest Classifier model are shown below:
 
 * This model has an accuracy of 81.1%** for predicting danceability
