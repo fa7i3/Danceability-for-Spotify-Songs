@@ -53,11 +53,11 @@ For the data preprocessing phase, we:
 
 ### Feature Engineering
 The following tasks were completed during the feature engineering phase: 
-* encoded the *key* column with Scikit-learn's OneHotEncoder module
+* encoded the *key* column with Scikit-learn's OneHotEncoder() module
 * scaling: 
     * *loudness*, originally from -60 to 3.8 db, was scaled from 0.0 to 1.0 during the preprocessing phase
     * *tempo*, originally from 0.0 to 244 BPM, was scaled from 0.0 to 1.0 during the preprocessing phase
-* scaling with StandardScaler was attempted to improve the accuracy of the model but should be unnecessary since the values in each column are already between 0 and 1. 
+* scaling with StandardScaler() was attempted to improve the accuracy of the model but should be unnecessary since the values in each column are already between 0 and 1. 
 
 ### Feature Selection
 The following columns from the *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)* dataset were selected to be features for the machine learning model:
@@ -94,11 +94,11 @@ The following supervised, classification machine learning models were incorporat
 
 Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model have the two highest accuracies of 80+%. Our models are currently unable to exceed an accuracy of 82%. Further improvements to the model and the preprocessing steps will be performed throughout the duration of the project.
 
-The model we are currently focusing on is the Balanced Random Forest Classifier.  
+The model we are currently focusing on is the Balanced Random Forest Classifier. 
 | Benefits | Limitations |
 | :------- | :---------- |
-| model runs very quickly compared to the Easy Ensemble AdaBoost Classifier and the Deep Neural Network | uses more computational power and resources as the output is combining hundreds of trees |
-| are robust against overfitting and robust to outliers | requires more time to train as compared to a simple decision tree |
+| Runs very quickly compared to the Easy Ensemble AdaBoost Classifier and the Deep Neural Network | Uses more computational power and resources as the output is combining hundreds of trees |
+| Are robust against overfitting and robust to outliers | Requires more time to train as compared to a simple decision tree |
 
 ### Steps
 The following steps summarize how we created a supervised machine learning model: 
