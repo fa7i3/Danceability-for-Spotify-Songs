@@ -94,6 +94,12 @@ The following supervised, classification machine learning models were incorporat
 
 Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model have the two highest accuracies of 80+%. Our models are currently unable to exceed an accuracy of 82%. Further improvements to the model and the preprocessing steps will be performed throughout the duration of the project.
 
+The model we are currently focusing on is the Balanced Random Forest Classifier.  
+| Benefits | Limitations |
+| :------- | :---------- |
+| model runs very quickly compared to the Easy Ensemble AdaBoost Classifier and the Deep Neural Network | uses more computational power and resources as the output is combining hundreds of trees |
+| are robust against overfitting and robust to outliers | requires more time to train as compared to a simple decision tree |
+
 ### Steps
 The following steps summarize how we created a supervised machine learning model: 
 
