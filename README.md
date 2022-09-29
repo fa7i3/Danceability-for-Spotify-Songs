@@ -123,10 +123,11 @@ The picture below contains the following information:
 
 
 
-* Factors affecting danceability.
+* Factors affecting danceability:The scatter plot shows that the higher the Energy and Tempo, the higher the danceability of the song and Instrumentalness of a song has little or no effect on its danceability.
 
- 
- The scatter plot shows that the higher the Energy and Tempo, the higher the danceability of the song and Instrumentalness of a song has little or no effect on its danceability.
+
+![danceability and energy over the years](https://user-images.githubusercontent.com/104453593/192929258-c83f8cbf-5b7b-4759-b6ba-2a39b4c378d0.PNG)
+
 
 ## Links
 
