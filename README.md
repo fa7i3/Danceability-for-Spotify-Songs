@@ -103,7 +103,7 @@ The Entity Relationship Diagram for the two tables is shown below:
 <img src="Images/ERD_spotify_database.png" width=472>
 
 ## Dashboard
-We plan to use Tableau to create the final dashboard for the project. Few reasons why Tableau will be used are:
+We plan to use Tableau Public to create the final dashboard for the project. Few reasons why Tableau will be used are:
 * It is easy to use;
 * It can easily handle large data;
 * It is an effetcive tool used to quickly create data visualizations;
@@ -112,7 +112,7 @@ We plan to use Tableau to create the final dashboard for the project. Few reason
 
 The final dashboard will show the number of songs, how danceability has changed throughout the years and show some factors that affects it. 
 
-## Tableau
+## Tableau Public
 The story contains the following information:
 #### Number of songs in the dataset: 
 According to the picture below, there are 169,909 songs in the spotify dataset.
