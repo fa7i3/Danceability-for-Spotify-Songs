@@ -113,7 +113,7 @@ We plan to use Tableau to create the final dashboard for the project. Few reason
 The final dashboard will show the number of songs, how danceability has changed throughout the years and show some factors that affects it. 
 
 ## Tableau
-The picture below contains the following information:
+The story contains the following information:
 #### Number of songs in the dataset: 
 According to the picture below, there are 169,909 songs in the spotify dataset.
 
