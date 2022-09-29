@@ -43,7 +43,7 @@
 ## Machine Learning Model
 
 ### Purpose
-A machine learning model was created to make predictions on the danceability of spotify songs. The target, danceability, was converted into a classification problem during the database preprocessing phase. Therefore, a classification machine learning model will examine the features as the input (X) and attempt to predict the danceability as the output (y). The machine learning model code can be found here: [machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb). 
+A machine learning model was created to make predictions on the danceability of spotify songs. The target, danceability, was converted into a classification problem during the database preprocessing phase. Therefore, a classification machine learning model will examine the features as the input (X) and attempt to predict the danceability as the output (y). The machine learning model code can be found here: *[machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb)*. 
 
 ### Data Preprocessing
 For the data preprocessing phase, we:
@@ -60,7 +60,7 @@ The following tasks were completed during the feature engineering phase:
 * scaling with StandardScaler was attempted to improve the accuracy of the model but should be unnecessary since the values in each column are already between 0 and 1. 
 
 ### Feature Selection
-The following columns from the *merged_spotify_songs.csv* dataset were selected to be features for the machine learning model:
+The following columns from the *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)* dataset were selected to be features for the machine learning model:
 
 | Feature | Description |
 | :------ | :---------- |
@@ -78,13 +78,13 @@ The following columns from the *merged_spotify_songs.csv* dataset were selected 
 | tempo_scaled | scaled tempo of track in BPM | 
 | valence | describes the musical positiveness conveyed by a track | 
 
-All the above audio features were selected because of their numerical values and strong probability for predicting danceability. Definitions for the above audio features were sourced from [Spotify Audio Feature Reference](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)
+All the above audio features were selected because of their numerical values and strong probability for predicting danceability. Definitions for the above audio features were sourced from *[Spotify Audio Feature Reference](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)*
 
 ### How Data was Split into Training and Testing
-In our machine learning model, we chose to split the data into **75% training** and **25% testing**. 
+In our machine learning model, we chose to split the data into 75% training and 25% testing. 
 
 ### Machine Learning Models - Choice, Benefits, and Limitations
-The following supervised, classification machine learning models were incorporated in [machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb):
+The following supervised, classification machine learning models were incorporated in *[machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb):*
 
 1. Logistic Regression
 2. Decision Tree
@@ -98,19 +98,19 @@ Multiple machine learning models were selected to determine which model would pr
 The following steps summarize how we created a supervised machine learning model: 
 
 1.	Split the data into input (X) and output (y) with danceability as the target feature
-2.  Split the Data into Training and Testing (75%/25%)
-3.	Define a model (e.g model = BalancedRandomForestClassifier())
-5.	Train the model with model.fit(X_train, y_train)
-6.	Make predictions with y_pred = model.predict(X_test)
-7.	Validate the model with confusion_matrix(), balanced_accuracy_score(), and classification_report()
+2.  Split the Data into Training and Testing: 75%/25%
+3.	Define a model: model = BalancedRandomForestClassifier()
+4.	Train the model with: model.fit(X_train, y_train)
+5.	Make predictions with: y_pred = model.predict(X_test)
+6.	Validate the model with: confusion_matrix(), balanced_accuracy_score(), and classification_report()
 
 ### Sample Results: Logistic Regression
 The accuracy scores and classification report for our sample Random Forest Classifier model are shown below:
 
-* This model has an accuracy of **81.08%** for predicting danceability
-* It achieved a precision of **0.86** and a recall of **0.81** for predicting danceability
-* It achieve an average F-score of 0.81 
-<img src="Images/sample_machine_learning_results.png" width="472">
+* This model has an accuracy of 81.1%** for predicting danceability
+* It achieved a precision of 0.86** and a recall of 0.81 for predicting danceability
+* It achieve an average f1-score of 0.81** 
+<img src="Images/sample_ml_results.png" width="472">
 
 ## Database
 We plan to use a SQL database (PostgreSQL and pgAdmin) to store our data. Our dataset consists of two tables: *[spotify_song_info.csv](Resources/spotify_song_info.csv)* which contains general information about each song and *[spotify_song_features.csv](Resources/spotify_song_features.csv)* which contains feature columns that we plan to use in our machine learning model. *spotify_song_features.csv* also contains the target column, *danceability*, for our machine learning model. The two tables will be cleaned using the Python Pandas library and merged into one dataset, *merged_spotify_songs.csv*, using SQL.   
