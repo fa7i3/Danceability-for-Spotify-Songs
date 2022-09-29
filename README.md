@@ -104,7 +104,7 @@ The Entity Relationship Diagram for the two tables is shown below:
 
 ## Dashboard
 We plan to use Tableau to create the final dashboard for the project. Few reasons why Tableau will be used are:
-* Easy to use;
+* It is easy to use;
 * It is an effetcive tool used to quickly create data visualizations;
 * It can transform data into an engaging story that can be easily understood by the audience.
 
@@ -116,18 +116,13 @@ The picture below contains the following information:
 
 ![number of songs](https://user-images.githubusercontent.com/104453593/192681719-56d25d32-cfad-459d-a7e2-7444d42bea6a.PNG)
 
-
 * Danceablity over the years: According to the linechart below, the darker the green color, the higher the danceability which shows that danceability has increased throughout the years (from 1921-2020).
 
 ![danceability over the years](https://user-images.githubusercontent.com/104453593/192681753-690933fb-c42d-4417-a7dd-377e4d7e3e20.PNG)
 
-
-
-* Factors affecting danceability:The scatter plot shows that the higher the Energy and Tempo, the higher the danceability of the song and Instrumentalness of a song has little or no effect on its danceability.
-
+* Factors affecting danceability: The line chart shows that Energy has an effect on the danceability, therefore, the higher the Energy, the higher the danceability of the song. 
 
 ![danceability and energy over the years](https://user-images.githubusercontent.com/104453593/192929258-c83f8cbf-5b7b-4759-b6ba-2a39b4c378d0.PNG)
-
 
 ## Links
 
