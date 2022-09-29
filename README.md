@@ -126,23 +126,45 @@ In *[preprocessing_dataset .ipynb](Database/preprocessing_dataset.ipynb)*, the t
 The Entity Relationship Diagram for the two tables is shown below:  
 <img src="Images/ERD_spotify_database.png" width=472>
 
-## Tableau
-The picture below contains the following information:
-* Number of songs in the dataset;
-* Danceablity over the years;
-* Factors affecting danceability.
+## Dashboard
+We plan to use Tableau Public to create the final dashboard for the project. Few reasons why Tableau will be used are:
+* It is easy to use;
+* It can easily handle large data;
+* It is an effetcive tool used to quickly create data visualizations;
+* It offers real-time analysis;
+* It can transform data into an engaging story that can be easily understood by the audience.
 
+The final dashboard will show the number of songs, how danceability has changed throughout the years and show some factors that affects it. 
 
-![tableau dashboard](https://user-images.githubusercontent.com/104453593/192433022-b7a6dc6b-905f-4f5a-9d9c-e42f82dfafe9.PNG)
+## Tableau Public
+The story contains the following information:
+#### Number of songs in the dataset: 
+According to the picture below, there are 169,909 songs in the spotify dataset.
 
+![number of songs](https://user-images.githubusercontent.com/104453593/192681719-56d25d32-cfad-459d-a7e2-7444d42bea6a.PNG)
 
-According to the picture above, there are 169,909 songs in the spotify dataset and danceability increased throughout the years (from 1921-2020). 
-According to the piechart in the picture above, the darker the green color, the higher the danceability which shows that danceability increased throughout the years (from 1921-2020). The scatter plot shows that the higher the Energy and Tempo, the higher the danceability of the song and Instrumentalness of a song has little or no effect on its danceability.
+#### Danceablity over the years: 
+The line chart below shows that danceability has increased throughout the years (from 1921-2020)
+* the x-axis represents the Year field;
+* the y-axis represents the Danceability field; 
+* The darker the green color, the higher the danceability.
+
+![danceability over the years](https://user-images.githubusercontent.com/104453593/192681753-690933fb-c42d-4417-a7dd-377e4d7e3e20.PNG)
+
+#### Factors affecting danceability: 
+The line chart below shows that Energy has an effect on Danceability
+* x-axis represents the Year field;
+* y-axis represents the Danceability field;
+* The legend shows that the green line represents Danceability and 
+* the gold line represents Energy throughout the years. 
+* The higher the Energy, the higher the danceability of the song. 
+
+![danceability and energy over the years](https://user-images.githubusercontent.com/104453593/192929258-c83f8cbf-5b7b-4759-b6ba-2a39b4c378d0.PNG)
 
 ## Links
 
-### Link to Dashboard
-[Tableau Dashboard](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyDanceabilityDashboard/Dashboard2?publish=yes)
+### Link to Tableau Story
+[Tableau Story](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyChangeinDanceabilityDashboardOverview/Story3?publish=yes)
 
 ### Link to Google Slides Presentation
 [Presentation](https://docs.google.com/presentation/d/1SLyJo5VTJr1ISsJsDj2ul_97DUWQovaDkD5HBMjirlo/edit?usp=sharing)
