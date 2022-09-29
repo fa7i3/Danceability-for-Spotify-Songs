@@ -105,7 +105,9 @@ The Entity Relationship Diagram for the two tables is shown below:
 ## Dashboard
 We plan to use Tableau to create the final dashboard for the project. Few reasons why Tableau will be used are:
 * It is easy to use;
+* It can easily handle large data;
 * It is an effetcive tool used to quickly create data visualizations;
+* It offers real-time analysis;
 * It can transform data into an engaging story that can be easily understood by the audience.
 
 The final dashboard will show the number of songs, how danceability has changed throughout the years and show some factors that affects it. 
@@ -126,7 +128,12 @@ The line chart below shows that danceability has increased throughout the years 
 ![danceability over the years](https://user-images.githubusercontent.com/104453593/192681753-690933fb-c42d-4417-a7dd-377e4d7e3e20.PNG)
 
 #### Factors affecting danceability: 
-According to the line chart below, the x-axis represents the Year field and the y-axis represents the Danceability field. The legend shows that the green line represents Danceability and the gold line represents Energy throughout the years. The line graph shows that Energy has an effect on the danceability, therefore, the higher the Energy, the higher the danceability of the song. 
+The line chart below shows that Energy has an effect on Danceability
+* x-axis represents the Year field;
+* y-axis represents the Danceability field;
+* The legend shows that the green line represents Danceability and 
+* the gold line represents Energy throughout the years. 
+* The higher the Energy, the higher the danceability of the song. 
 
 ![danceability and energy over the years](https://user-images.githubusercontent.com/104453593/192929258-c83f8cbf-5b7b-4759-b6ba-2a39b4c378d0.PNG)
 
