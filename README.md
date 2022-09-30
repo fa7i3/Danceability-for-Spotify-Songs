@@ -113,9 +113,9 @@ The following steps summarize how we created a supervised machine learning model
 ### Sample Results: Balanced Random Forest Classifier
 The accuracy scores and classification report for our sample Random Forest Classifier model are shown below:
 
-* This model has an accuracy of 81.1%** for predicting danceability
-* It achieved a precision of 0.86** and a recall of 0.81 for predicting danceability
-* It achieve an average f1-score of 0.81** 
+* This model has an accuracy of 81.1% for predicting danceability
+* It achieved a precision of 0.86 and a recall of 0.81 for predicting danceability
+* It achieve an average f1-score of 0.81
 <img src="Images/sample_ml_results.png" width="472">
 
 ## Database
