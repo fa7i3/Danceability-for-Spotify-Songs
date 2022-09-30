@@ -119,9 +119,16 @@ The accuracy scores and classification report for our sample Random Forest Class
 <img src="Images/sample_ml_results.png" width="472">
 
 ## Database
-We plan to use a SQL database (PostgreSQL and pgAdmin) to store our data. Our dataset consists of two tables: *[spotify_song_info.csv](Resources/spotify_song_info.csv)* which contains general information about each song and *[spotify_song_features.csv](Resources/spotify_song_features.csv)* which contains feature columns that we plan to use in our machine learning model. *spotify_song_features.csv* also contains the target column, *danceability*, for our machine learning model. The two tables will be cleaned using the Python Pandas library and merged into one dataset, *merged_spotify_songs.csv*, using SQL.   
 
-In *[preprocessing_dataset .ipynb](Database/preprocessing_dataset.ipynb)*, the two tables are examined, cleaned, and sent to a PostgreSQL database via a connection string using SQLAlchemy. Then, a *[query](Database/query.sql)* was designed to join the two tables into *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)*. 
+We plan to use a SQL database (PostgreSQL and pgAdmin) to store our data. 
+
+Our dataset consists of two tables: 
+- *[spotify_song_info.csv](Resources/spotify_song_info.csv)* which contains general information about each song 
+- *[spotify_song_features.csv](Resources/spotify_song_features.csv)* which contains feature columns and the target column *danceability* that we plan to use for our machine learning model. 
+
+Using pgAdmin two tables were created to store both datasets (*[query](Database/query.sql)*) and joined them to create our third table in order to store the *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)*. 
+
+Using Python Pandas Library in *[final_preprocessing_data .ipynb](Database/final_preprocessing_data.ipynb)*, the two tables were merged into one dataset, which was examined, cleaned, and sent to a PostgreSQL database via a connection string using SQLAlchemy into the merged_spotify_songs table previously created.
 
 The Entity Relationship Diagram for the two tables is shown below:  
 <img src="Images/ERD_spotify_database.png" width=472>
