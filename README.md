@@ -137,7 +137,7 @@ The Entity Relationship Diagram for the two tables is shown below:
 We plan to use Tableau Public to create the final dashboard for the project. Few reasons why Tableau will be used are:
 * It is easy to use;
 * It can easily handle large data;
-* It is an effetcive tool used to quickly create data visualizations;
+* It is an effective tool used to quickly create data visualizations;
 * It offers real-time analysis;
 * It can transform data into an engaging story that can be easily understood by the audience.
 
