@@ -47,6 +47,7 @@ A machine learning model was created to make predictions on the danceability of 
 
 ### Data Preprocessing
 For the data preprocessing phase, we:
+* determined the shape of the dataset
 * verified the datatypes for each column
 * checked for null values and duplicate values
 * moved all non-numerical values to a second dataframe and kept all numerical values on the main dataframe
@@ -54,16 +55,16 @@ For the data preprocessing phase, we:
 ### Feature Engineering
 The following tasks were completed during the feature engineering phase: 
 * encoded the *key* column with Scikit-learn's OneHotEncoder() module
-* scaling: 
-    * *loudness*, originally from -60 to 3.8 db, was scaled from 0.0 to 1.0 during the preprocessing phase
-    * *tempo*, originally from 0.0 to 244 BPM, was scaled from 0.0 to 1.0 during the preprocessing phase
-* scaling with StandardScaler() was attempted to improve the accuracy of the model but should be unnecessary since the values in each column are already between 0 and 1. 
+* scaling with Scikit-learn's StandardScaler() was neccessary to scale the *year*, *duration_ms*, *loudness*, and *tempo* columns 
+* Note: the columns *loudness_scaled* and *tempo_scaled* that were scaled dring the preprocessing phase were dropped
 
 ### Feature Selection
 The following columns from the *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)* dataset were selected to be features for the machine learning model:
 
 | Feature | Description |
 | :------ | :---------- |
+| year | the year the track was released |
+| duration_ms | the length of the track in milliseconds |
 | acousticness | confidence measure of whether the track is acoustic |
 | danceability (target) | whether the track is suitable for dancing |
 | energy | perceptual measure of intensity and activity |
@@ -71,11 +72,11 @@ The following columns from the *[merged_spotify_songs.csv](Resources/merged_spot
 | instrumentalness | predicts whether a track contains no vocals |
 | key | key the track is in (i.e 0 = C, 1 = C#/D♭, 2 = D, 3 = D#/E♭, ... , 11 = B) |
 | liveness | detects presence of audience |
-| loudness_scaled | scaled loudness of track in dB |
+| loudness | loudness of track in decibels (dB) |
 | mode | modality of a track (1 = major,  0 = minor) |
 | popularity | calculated by total number of plays and how recent plays are |
 | speechiness | detects presence of spoken words |
-| tempo_scaled | scaled tempo of track in BPM | 
+| tempo | tempo of track in beats per minute (BPM) | 
 | valence | describes the musical positiveness conveyed by a track | 
 
 All the above audio features were selected because of their numerical values and strong probability for predicting danceability. Definitions for the above audio features were sourced from the *[Spotify Audio Feature Reference](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)*.
@@ -84,24 +85,29 @@ All the above audio features were selected because of their numerical values and
 In our machine learning model, we chose to split the data into 75% training and 25% testing. 
 
 ### Machine Learning Models - Choice, Benefits, and Limitations
-The following supervised, classification machine learning models were incorporated in *[machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb):*
+The following supervised, classification machine learning models were incorporated in *[machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb)*:
 
 1. Logistic Regression
 2. Decision Tree
-3. Balanced Random Forest Classifier
+3. **Balanced Random Forest Classifier**
 4. Easy Ensemble AdaBoost Classifier
 5. Deep Neural Network
 
-Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model have the two highest accuracies of 80+%. Our models are currently unable to exceed an accuracy of 82%. Further improvements to the model and the preprocessing steps will be performed throughout the duration of the project.
+Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model have the two highest accuracies of 80+%. Our models are currently unable to exceed an accuracy of 83%. Changes to the machine learning model and to the preprocessing steps are documented below. 
 
-The model we are currently focusing on is the Balanced Random Forest Classifier. 
+The model we are focusing on is the Balanced Random Forest Classifier. The benefits and limitations of this model are summarized below: 
 | Benefits | Limitations |
 | :------- | :---------- |
 | Runs very quickly compared to the Easy Ensemble AdaBoost Classifier and the Deep Neural Network | Uses more computational power and resources as the output is combining hundreds of trees |
-| Are robust against overfitting and robust to outliers | Requires more time to train as compared to a simple decision tree |
+| Is robust against overfitting and outliers | Requires more time to train as compared to a simple decision tree |
 
-### Steps
-The following steps summarize how we created a supervised machine learning model: 
+### Changes to the Machine Learning Model
+To improve the accuracy of the machine learning model, the following changes were completed:
+* kept the *date* and *duration* columns which were originally dropped when creating the feature dataframe
+* used StandardScaler() to scale the data instead of manually scaling the *loudness* and *tempo* columns. Scaling was 
+
+### Steps: Balanced Random Forest Classifier
+The following steps summarize how we created the supervised machine learning model: 
 
 1.	Split the data into input (X) and output (y) with danceability as the target feature
 2.  Split the Data into Training and Testing: 75%/25%
@@ -110,7 +116,7 @@ The following steps summarize how we created a supervised machine learning model
 5.	Make predictions with: y_pred = model.predict(X_test)
 6.	Validate the model with: confusion_matrix(), balanced_accuracy_score(), and classification_report()
 
-### Sample Results: Balanced Random Forest Classifier
+### Results: Balanced Random Forest Classifier
 The accuracy scores and classification report for our sample Random Forest Classifier model are shown below:
 
 * This model has an accuracy of 81.1% for predicting danceability
