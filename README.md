@@ -93,19 +93,18 @@ The following supervised, classification machine learning models were incorporat
 4. Easy Ensemble AdaBoost Classifier
 5. Deep Neural Network
 
-Multiple machine learning models were selected to determine which model would produce the highest accuracy. The Balanced Random Forest Classifier model and the Deep Neural Network model have the two highest accuracies of 80+%. Our models are currently unable to exceed an accuracy of 83%. Changes to the machine learning model and to the preprocessing steps are documented below. 
+From the multiple machine learning models that we selected, the Balanced Random Forest Classifier had the highest accuracy of 82.37%. Thus, the model we focused on was the Balanced Random Forest Classifier. The benefits and limitations of this model are summarized below: 
 
-The model we are focusing on is the Balanced Random Forest Classifier. The benefits and limitations of this model are summarized below: 
 | Benefits | Limitations |
 | :------- | :---------- |
 | Runs very quickly compared to the Easy Ensemble AdaBoost Classifier and the Deep Neural Network | Uses more computational power and resources as the output is combining hundreds of trees |
 | Is robust against overfitting and outliers | Requires more time to train as compared to a simple decision tree |
 
 ### Changes to the Machine Learning Model
-To improve the accuracy of the machine learning model, the following changes were completed:
+To improve the accuracy of the machine learning model, the following changes were made to the original algorithm:
 * kept the *date* and *duration_ms* columns which were originally dropped when creating the feature dataframe
 * used StandardScaler() to scale the data instead of manually scaling the *loudness* and *tempo* columns
-* for the Balanced Random Forest Classifier, the accuracy of the model improved from 80.90% to 82.37%. 
+* the accuracy of the Balanced Random Forest Classifier model improved by approximately 1.50%
 
 ### Steps: Balanced Random Forest Classifier
 The following steps summarize how we created the supervised machine learning model: 
