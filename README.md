@@ -55,7 +55,7 @@ For the data preprocessing phase, we:
 ### Feature Engineering
 The following tasks were completed during the feature engineering phase: 
 * encoded the *key* column with Scikit-learn's OneHotEncoder() module
-* scaling with Scikit-learn's StandardScaler() was neccessary to scale the *year*, *duration_ms*, *loudness*, and *tempo* columns 
+* scaling with Scikit-learn's StandardScaler() was necessary to scale the *year*, *duration_ms*, *loudness*, and *tempo* columns 
 * Note: the columns *loudness_scaled* and *tempo_scaled* that were scaled dring the preprocessing phase were dropped
 
 ### Feature Selection
@@ -103,26 +103,32 @@ The model we are focusing on is the Balanced Random Forest Classifier. The benef
 
 ### Changes to the Machine Learning Model
 To improve the accuracy of the machine learning model, the following changes were completed:
-* kept the *date* and *duration* columns which were originally dropped when creating the feature dataframe
-* used StandardScaler() to scale the data instead of manually scaling the *loudness* and *tempo* columns. Scaling was 
+* kept the *date* and *duration_ms* columns which were originally dropped when creating the feature dataframe
+* used StandardScaler() to scale the data instead of manually scaling the *loudness* and *tempo* columns
+* for the Balanced Random Forest Classifier, the accuracy of the model improved from 80.90% to 82.37%. 
 
 ### Steps: Balanced Random Forest Classifier
 The following steps summarize how we created the supervised machine learning model: 
 
-1.	Split the data into input (X) and output (y) with danceability as the target feature
-2.  Split the Data into Training and Testing: 75%/25%
-3.	Define a model: model = BalancedRandomForestClassifier()
-4.	Train the model with: model.fit(X_train, y_train)
-5.	Make predictions with: y_pred = model.predict(X_test)
-6.	Validate the model with: confusion_matrix(), balanced_accuracy_score(), and classification_report()
+1. Dropped unnecessary, non-numerical columns
+2. Encoded the *key* column with OneHotEncoder()
+3. Split the data into input (X) and output (y) with danceability as the target feature
+4. Split the Data into training and testing: 75%/25%
+5. Scaled the input (X) data with StandardScaler()
+6. Defined a model: model = BalancedRandomForestClassifier()
+7. Trained the model: model.fit(X_train_scaled, y_train)
+8. Made predictions: y_pred = model.predict(X_test)
+9. Validated the model: confusion_matrix(), balanced_accuracy_score(), and classification_report()
 
 ### Results: Balanced Random Forest Classifier
 The accuracy scores and classification report for our sample Random Forest Classifier model are shown below:
+* model had an accuracy of 82.37% for predicting danceability
+* achieved a precision of 0.88 and a recall of 0.82 for predicting danceability
+* achieved an f1-score of 0.85 for predicting danceability
+<img src="Images/random_forest_model_results.png" width="472">
 
-* This model has an accuracy of 81.1% for predicting danceability
-* It achieved a precision of 0.86 and a recall of 0.81 for predicting danceability
-* It achieve an average f1-score of 0.81
-<img src="Images/sample_ml_results.png" width="472">
+### Conclusion: Balanced Random Forest Classifier
+To conclude, this machine learning model addresses our machine learning questions and can predict the danceability of Spotify songs with an accuracy of 82.37%. During the machine learning optimzation phase, it was essential to keep the previously dropped numerical columns (*year* and *duration_ms*) and to scale the data with StandardScaler. Changing the number of trees in the forest model from 100 to 500 also improved its accuracy. 
 
 ## Database
 
