@@ -54,9 +54,9 @@ For the data preprocessing phase, we:
 
 ### Feature Engineering
 The following tasks were completed during the feature engineering phase: 
-* encoded the *key* column with Scikit-learn's OneHotEncoder() module
+* encoded the *key* column with Scikit-learn's OneHotEncoder()
 * scaling with Scikit-learn's StandardScaler() was necessary to scale the *year*, *duration_ms*, *loudness*, and *tempo* columns 
-* Note: the columns *loudness_scaled* and *tempo_scaled* that were scaled dring the preprocessing phase were dropped
+* Note: the columns *loudness_scaled* and *tempo_scaled* that were scaled during the preprocessing phase were dropped
 
 ### Feature Selection
 The following columns from the *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)* dataset were selected to be features for the machine learning model:
@@ -98,13 +98,14 @@ From the multiple machine learning models that we selected, the Balanced Random 
 | Benefits | Limitations |
 | :------- | :---------- |
 | Runs very quickly compared to the Easy Ensemble AdaBoost Classifier and the Deep Neural Network | Uses more computational power and resources as the output is combining hundreds of trees |
-| Is robust against overfitting and outliers | Requires more time to train as compared to a simple decision tree |
+| Is robust against overfitting and outliers | Requires more time to train as compared to a simple Decision Tree model |
 
 ### Changes to the Machine Learning Model
 To improve the accuracy of the machine learning model, the following changes were made to the original algorithm:
 * kept the *date* and *duration_ms* columns which were originally dropped when creating the feature dataframe
 * used StandardScaler() to scale the data instead of manually scaling the *loudness* and *tempo* columns
-* the accuracy of the Balanced Random Forest Classifier model improved by approximately 1.50%
+* increased the number of trees (*n_estimators*) for the model from 100 to 500
+* the accuracy of the Balanced Random Forest Classifier model increased by approximately 1.50%
 
 ### Steps: Balanced Random Forest Classifier
 The following steps summarize how we created the supervised machine learning model: 
