@@ -113,9 +113,9 @@ The following steps summarize how we created a supervised machine learning model
 ### Sample Results: Balanced Random Forest Classifier
 The accuracy scores and classification report for our sample Random Forest Classifier model are shown below:
 
-* This model has an accuracy of 81.1%** for predicting danceability
-* It achieved a precision of 0.86** and a recall of 0.81 for predicting danceability
-* It achieve an average f1-score of 0.81** 
+* This model has an accuracy of 81.1% for predicting danceability
+* It achieved a precision of 0.86 and a recall of 0.81 for predicting danceability
+* It achieve an average f1-score of 0.81
 <img src="Images/sample_ml_results.png" width="472">
 
 ## Database
@@ -137,7 +137,7 @@ The Entity Relationship Diagram for the two tables is shown below:
 We plan to use Tableau Public to create the final dashboard for the project. Few reasons why Tableau will be used are:
 * It is easy to use;
 * It can easily handle large data;
-* It is an effetcive tool used to quickly create data visualizations;
+* It is an effective tool used to quickly create data visualizations;
 * It offers real-time analysis;
 * It can transform data into an engaging story that can be easily understood by the audience.
 
