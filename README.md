@@ -180,6 +180,11 @@ The line chart below shows that Energy has an effect on Danceability
 
 ![danceability and energy over the years](https://user-images.githubusercontent.com/104453593/192929258-c83f8cbf-5b7b-4759-b6ba-2a39b4c378d0.PNG)
 
+#### Predictions vs Actual for Machine Learning
+
+
+![predictions vs actual pic](https://user-images.githubusercontent.com/104453593/193964113-78025012-7725-4e1b-8b1e-34058be17747.PNG)
+
 ## Links
 
 ### Link to Tableau Story
