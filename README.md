@@ -55,8 +55,7 @@ For the data preprocessing phase, we:
 ### Feature Engineering
 The following tasks were completed during the feature engineering phase: 
 * encoded the *key* column with Scikit-learn's OneHotEncoder()
-* scaling with Scikit-learn's StandardScaler() was necessary to scale the *year*, *duration_ms*, *loudness*, and *tempo* columns 
-* Note: the columns *loudness_scaled* and *tempo_scaled* that were scaled during the preprocessing phase were dropped
+* scaled the *year*, *duration_ms*, *loudness*, and *tempo* columns with Scikit-learn's StandardScaler()
 
 ### Feature Selection
 The following columns from the *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)* dataset were selected to be features for the machine learning model:
@@ -108,7 +107,7 @@ To improve the accuracy of the machine learning model, the following changes wer
 * the accuracy of the Balanced Random Forest Classifier model increased by approximately 1.50%
 
 ### Steps: Balanced Random Forest Classifier
-The following steps summarize how we created the supervised machine learning model: 
+The following steps summarize how we created the machine learning model (*[random_forest_classifier.ipynb](Machine_Learning_Model/random_forest_classifier.ipynb)*): 
 
 1. Dropped unnecessary, non-numerical columns
 2. Encoded the *key* column with OneHotEncoder()
