@@ -183,7 +183,9 @@ The line chart below shows that Energy has an effect on Danceability
 #### Predicted vs Actual Values for Machine Learning
 The line chart shows the actual and predicted values over the years
 * x-axis represents the Year field;
-* y-axi
+* y-axis on the left represnts Y-actual;
+* y-axis on the right represents Y-pred;
+* 
 
 ![predictions vs actual pic](https://user-images.githubusercontent.com/104453593/193964113-78025012-7725-4e1b-8b1e-34058be17747.PNG)
 
