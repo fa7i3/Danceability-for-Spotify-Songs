@@ -1,7 +1,7 @@
 # Danceability-of-Spotify-Songs
 
 ## Team Members:
-* Faith: Github Repository
+* Faith: Github Repository and Dashboard
 * Daniel: Machine Learning Model
 * Diana: Database Integration
 
@@ -153,7 +153,7 @@ We plan to use Tableau Public to create the final dashboard for the project. Few
 * It offers real-time analysis;
 * It can transform data into an engaging story that can be easily understood by the audience.
 
-The final dashboard will show the number of songs, how danceability has changed throughout the years and show some factors that affects it. 
+The final dashboard will show the number of songs, how danceability has changed throughout the years, show some factors that affects it and machine learning. 
 
 ## Tableau Public
 The story contains the following information:
