@@ -94,24 +94,23 @@ The following supervised, classification machine learning models were incorporat
 
 From the multiple machine learning models that we selected, the Balanced Random Forest Classifier had the highest accuracy of 82.37%. Thus, the model we focused on was the Balanced Random Forest Classifier. The benefits and limitations of this model as well as the Easy Ensemble AdaBoost Classifier and the Deep Neural Network are summarized below: 
 
-#### Pros and Cons: Balanced Random Forest Classifier
+#### Balanced Random Forest Classifier
 | Benefits | Limitations |
 | :------- | :---------- |
 | Runs very quickly compared to the Easy Ensemble AdaBoost Classifier and the Deep Neural Network | Uses more computational power and resources as the output is combining hundreds of trees |
 | Is robust against overfitting and outliers | Requires more time to train as compared to a simple Decision Tree model |
 
-#### Pros and Cons: Easy Ensemble AdaBoost Classifier
+#### Easy Ensemble AdaBoost Classifier
 | Benefits | Limitations |
 | :------- | :---------- |
 | Robust against overfitting | Sensitive to noisy data and outliers |
 | | Requires long time to train |
 
-#### Pros and Cons: Deep Neural Network
+#### Deep Neural Network
 | Benefits | Limitations |
 | :------- | :---------- |
-| Flexible: can be applied for both regression and classification problems | Black-box nature; unable to know which input variable is influencing the output | 
+| Is flexible; can be applied for both regression and classification problems | Black-box nature; unable to know which input variable is significantly influencing the output | 
 | Designed to continously learn and improve its results | Sensitive to overfitting and generalization | 
-
 
 ### Changes to the Machine Learning Model
 To improve the accuracy of the machine learning model, the following changes were made to the original algorithm:
@@ -139,6 +138,16 @@ The accuracy scores and classification report for our sample Random Forest Class
 * achieved a precision of 0.88 and a recall of 0.82 for predicting danceability
 * achieved an f1-score of 0.85 for predicting danceability
 <img src="Images/random_forest_model_results.png" width="472">
+
+### Accuracy Scores of each Machine Learning model
+We mainly focused on tracking the accuracy score of each model. A summary of each model's accuracy score is shown below:
+| Model | Accuracy Score |
+| :---- | :------------- |
+| Balanced Random Forest Classifier | 82.37% |
+| Deep Neural Network | 81.09% |
+| Easy Ensemble AdaBoost Classifier | 79.26% |
+| Logistic Regression | 76.02% |
+| Decision Tree | 74.55% |
 
 ### Conclusion: Balanced Random Forest Classifier
 To conclude, this machine learning model addresses our machine learning questions and can predict the danceability of Spotify songs with an accuracy of 82.37%. During the machine learning optimzation phase, it was essential to keep the previously dropped numerical columns (*year* and *duration_ms*) and to scale the data with StandardScaler. Changing the number of trees in the forest model from 100 to 500 also improved its accuracy. 
