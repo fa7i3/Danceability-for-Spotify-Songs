@@ -92,12 +92,26 @@ The following supervised, classification machine learning models were incorporat
 4. Easy Ensemble AdaBoost Classifier
 5. Deep Neural Network
 
-From the multiple machine learning models that we selected, the Balanced Random Forest Classifier had the highest accuracy of 82.37%. Thus, the model we focused on was the Balanced Random Forest Classifier. The benefits and limitations of this model are summarized below: 
+From the multiple machine learning models that we selected, the Balanced Random Forest Classifier had the highest accuracy of 82.37%. Thus, the model we focused on was the Balanced Random Forest Classifier. The benefits and limitations of this model as well as the Easy Ensemble AdaBoost Classifier and the Deep Neural Network are summarized below: 
 
+#### Pros and Cons: Balanced Random Forest Classifier
 | Benefits | Limitations |
 | :------- | :---------- |
 | Runs very quickly compared to the Easy Ensemble AdaBoost Classifier and the Deep Neural Network | Uses more computational power and resources as the output is combining hundreds of trees |
 | Is robust against overfitting and outliers | Requires more time to train as compared to a simple Decision Tree model |
+
+#### Pros and Cons: Easy Ensemble AdaBoost Classifier
+| Benefits | Limitations |
+| :------- | :---------- |
+| Robust against overfitting | Sensitive to noisy data and outliers |
+| | Requires long time to train |
+
+#### Pros and Cons: Deep Neural Network
+| Benefits | Limitations |
+| :------- | :---------- |
+| Flexible: can be applied for both regression and classification problems | Black-box nature; unable to know which input variable is influencing the output | 
+| Designed to continously learn and improve its results | Sensitive to overfitting and generalization | 
+
 
 ### Changes to the Machine Learning Model
 To improve the accuracy of the machine learning model, the following changes were made to the original algorithm:
