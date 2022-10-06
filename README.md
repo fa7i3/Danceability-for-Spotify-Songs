@@ -173,7 +173,8 @@ The line chart below shows that danceability has increased throughout the years 
 #### Factors affecting danceability: 
 The line chart below shows that Energy has an effect on Danceability
 * x-axis represents the Year field;
-* y-axis represents the Danceability field;
+* y-axis on the left represents the Danceability field;
+* y-axis on the right represents the Energy field;
 * The legend shows that the green line represents Danceability and 
 * the gold line represents Energy throughout the years. 
 * The higher the Energy, the higher the danceability of the song. 
@@ -183,9 +184,11 @@ The line chart below shows that Energy has an effect on Danceability
 #### Predicted vs Actual Values for Machine Learning
 The line chart shows the actual and predicted values over the years
 * x-axis represents the Year field;
-* y-axis on the left represnts Y-actual;
-* y-axis on the right represents Y-pred;
-* 
+* y-axis on the left represnts Y Actual;
+* y-axis on the right represents Y Pred;
+* The legend shows that the blue line represents Y Actual and 
+* the orange line represents Y Pred. 
+* The line graph shows that the Actual and Predicted values over the years are similar and accurate.
 
 ![predictions vs actual pic](https://user-images.githubusercontent.com/104453593/193964113-78025012-7725-4e1b-8b1e-34058be17747.PNG)
 
