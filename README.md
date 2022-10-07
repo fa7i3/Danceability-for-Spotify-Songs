@@ -46,15 +46,13 @@
 A machine learning model was created to make predictions on the danceability of spotify songs. The target, danceability, was converted into a classification problem during the database preprocessing phase. Therefore, a classification machine learning model will examine the features as the input (X) and attempt to predict the danceability as the output (y). The machine learning model code can be found here: *[machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb)*. 
 
 ### Data Inspection
-For the data preprocessing phase, we:
 * determined the shape of the dataset
 * verified the datatypes for each column
 * checked for null values and duplicate values
 * moved all non-numerical values to a second dataframe and kept all numerical values on the main dataframe
 
 ### Feature Engineering
-The following tasks were completed during the feature engineering phase: 
-* created new *month* column by extracting *month* from the *release_date* column and dropping the *release_date* column
+* extracted *month* from the *release_date* column and dropping the *release_date* column
 * removed outliers from the *duration_ms* column (removed top 5% and bottom 1%)
 
 ### Data Preprocessing
@@ -120,10 +118,10 @@ From the multiple machine learning models that we selected, the Balanced Random 
 
 ### Changes to the Machine Learning Model
 To improve the accuracy of the machine learning model, the following changes were made to the original algorithm:
-* kept the *date* and *duration_ms* columns which were originally dropped when creating the feature dataframe
+* kept the *date* and *duration_ms* columns in the feature dataframe
 * created new *month* column and encoded it
 * removed outliers from the *duration_ms* column
-* used StandardScaler() to scale the data instead of manually scaling the *loudness* and *tempo* columns
+* used StandardScaler() to scale the data instead of manually scaling the columns
 * increased the number of trees (*n_estimators*) for the model from 100 to 256
 * the accuracy of the Balanced Random Forest Classifier model increased by approximately 1.50%
 
