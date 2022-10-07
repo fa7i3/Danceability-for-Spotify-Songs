@@ -131,7 +131,7 @@ To improve the accuracy of the machine learning model, the following changes wer
 The following steps summarize how we created the machine learning model (*[random_forest_classifier.ipynb](Machine_Learning_Model/random_forest_classifier.ipynb)*): 
 
 1. Dropped unnecessary, non-numerical columns
-2. Performed Feature Engineering (new *month* column and removed *duration* outliers)
+2. Performed Feature Engineering (new *month* column and removed *duration_ms* outliers)
 2. Encoded the *key* and *month* column with OneHotEncoder()
 3. Split the data into input (X) and output (y) with danceability as the target feature
 4. Split the Data into training and testing: 75%/25%
