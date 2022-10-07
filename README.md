@@ -1,7 +1,7 @@
 # Danceability-of-Spotify-Songs
 
 ## Team Members:
-* Faith: Github Repository
+* Faith: Github Repository and Dashboard
 * Daniel: Machine Learning Model
 * Diana: Database Integration
 
@@ -184,7 +184,7 @@ We plan to use Tableau Public to create the final dashboard for the project. Few
 * It offers real-time analysis;
 * It can transform data into an engaging story that can be easily understood by the audience.
 
-The final dashboard will show the number of songs, how danceability has changed throughout the years and show some factors that affects it. 
+The final dashboard will show the number of songs, how danceability has changed throughout the years, show some factors that affects it and machine learning. 
 
 ## Tableau Public
 The story contains the following information:
@@ -204,14 +204,29 @@ The line chart below shows that danceability has increased throughout the years 
 #### Factors affecting danceability: 
 The line chart below shows that Energy has an effect on Danceability
 * x-axis represents the Year field;
-* y-axis represents the Danceability field;
+* y-axis on the left represents the Danceability field;
+* y-axis on the right represents the Energy field;
 * The legend shows that the green line represents Danceability and 
 * the gold line represents Energy throughout the years. 
 * The higher the Energy, the higher the danceability of the song. 
 
 ![danceability and energy over the years](https://user-images.githubusercontent.com/104453593/192929258-c83f8cbf-5b7b-4759-b6ba-2a39b4c378d0.PNG)
 
+#### Predicted vs Actual Values for Machine Learning
+The line chart shows the actual and predicted values over the years
+* x-axis represents the Year field;
+* y-axis on the left represnts Y Actual;
+* y-axis on the right represents Y Pred;
+* The legend shows that the blue line represents Y Actual and 
+* the orange line represents Y Pred. 
+* The line graph shows that the Actual and Predicted values over the years are similar and accurate.
+
+![predictions vs actual pic](https://user-images.githubusercontent.com/104453593/193964113-78025012-7725-4e1b-8b1e-34058be17747.PNG)
+
 ## Links
+
+### Link to Dashboard
+[Tableau Dashboard](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyChangeinDanceabilityDashboardOverview/FinalDashboard?publish=yes)
 
 ### Link to Tableau Story
 [Tableau Story](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyChangeinDanceabilityDashboardOverview/Story3?publish=yes)
@@ -219,6 +234,7 @@ The line chart below shows that Energy has an effect on Danceability
 ### Link to Google Slides Presentation
 [Presentation](https://docs.google.com/presentation/d/1SLyJo5VTJr1ISsJsDj2ul_97DUWQovaDkD5HBMjirlo/edit?usp=sharing)
 
-
-
-
+## Questions Answered
+* Machine learning models can successfully predict the danceability of the songs with an accuracy of 82.37%.
+* From the Machine learning and dashboard, we can conclude that danceability has increased over the years and energy has an effect on danceability i.e The higher the Energy, the higher the danceability of the song.
+* From the Tableau story, we can see that some factors like Energy, Valence, Mode and Tempo can predict the danceability of a song.
