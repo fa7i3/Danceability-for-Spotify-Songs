@@ -45,7 +45,7 @@
 ### Purpose
 A machine learning model was created to make predictions on the danceability of spotify songs. The target, danceability, was converted into a classification problem during the database preprocessing phase. Therefore, a classification machine learning model will examine the features as the input (X) and attempt to predict the danceability as the output (y). The machine learning model code can be found here: *[machine_learning_models.ipynb](Machine_Learning_Model/machine_learning_models.ipynb)*. 
 
-### Data Preprocessing
+### Data Inspection
 For the data preprocessing phase, we:
 * determined the shape of the dataset
 * verified the datatypes for each column
@@ -54,7 +54,12 @@ For the data preprocessing phase, we:
 
 ### Feature Engineering
 The following tasks were completed during the feature engineering phase: 
+* created new *month* column by extracting *month* from the *release_date* column and dropping the *release_date* column
+* removed outliers from the *duration_ms* column (removed top 5% and bottom 1%)
+
+### Data Preprocessing
 * encoded the *key* column with Scikit-learn's OneHotEncoder()
+* encoded the *month* column with Scikit-learn's OneHotEncoder()
 * scaled the *year*, *duration_ms*, *loudness*, and *tempo* columns with Scikit-learn's StandardScaler()
 
 ### Feature Selection
@@ -62,6 +67,7 @@ The following columns from the *[merged_spotify_songs.csv](Resources/merged_spot
 
 | Feature | Description |
 | :------ | :---------- |
+| month | the month the track was released |
 | year | the year the track was released |
 | duration_ms | the length of the track in milliseconds |
 | acousticness | confidence measure of whether the track is acoustic |
@@ -92,7 +98,7 @@ The following supervised, classification machine learning models were incorporat
 4. Easy Ensemble AdaBoost Classifier
 5. Deep Neural Network
 
-From the multiple machine learning models that we selected, the Balanced Random Forest Classifier had the highest accuracy of 82.37%. Thus, the model we focused on was the Balanced Random Forest Classifier. The benefits and limitations of this model as well as the Easy Ensemble AdaBoost Classifier and the Deep Neural Network are summarized below: 
+From the multiple machine learning models that we selected, the Balanced Random Forest Classifier had the highest accuracy of 81.99%. Thus, the model we focused on was the Balanced Random Forest Classifier. The benefits and limitations of this model as well as the Easy Ensemble AdaBoost Classifier and the Deep Neural Network are summarized below: 
 
 #### Balanced Random Forest Classifier
 | Benefits | Limitations |
@@ -115,15 +121,18 @@ From the multiple machine learning models that we selected, the Balanced Random 
 ### Changes to the Machine Learning Model
 To improve the accuracy of the machine learning model, the following changes were made to the original algorithm:
 * kept the *date* and *duration_ms* columns which were originally dropped when creating the feature dataframe
+* created new *month* column and encoded it
+* removed outliers from the *duration_ms* column
 * used StandardScaler() to scale the data instead of manually scaling the *loudness* and *tempo* columns
-* increased the number of trees (*n_estimators*) for the model from 100 to 500
+* increased the number of trees (*n_estimators*) for the model from 100 to 256
 * the accuracy of the Balanced Random Forest Classifier model increased by approximately 1.50%
 
 ### Steps: Balanced Random Forest Classifier
 The following steps summarize how we created the machine learning model (*[random_forest_classifier.ipynb](Machine_Learning_Model/random_forest_classifier.ipynb)*): 
 
 1. Dropped unnecessary, non-numerical columns
-2. Encoded the *key* column with OneHotEncoder()
+2. Performed Feature Engineering (new *month* column and removed *duration* outliers)
+2. Encoded the *key* and *month* column with OneHotEncoder()
 3. Split the data into input (X) and output (y) with danceability as the target feature
 4. Split the Data into training and testing: 75%/25%
 5. Scaled the input (X) data with StandardScaler()
@@ -134,23 +143,23 @@ The following steps summarize how we created the machine learning model (*[rando
 
 ### Results: Balanced Random Forest Classifier
 The accuracy scores and classification report for our sample Random Forest Classifier model are shown below:
-* model had an accuracy of 82.37% for predicting danceability
-* achieved a precision of 0.88 and a recall of 0.82 for predicting danceability
-* achieved an f1-score of 0.85 for predicting danceability
+* model had an accuracy of 81.99% for predicting danceability
+* achieved a precision of 0.87 and a recall of 0.82 for predicting danceability
+* achieved an f1-score of 0.84 for predicting danceability
 <img src="Images/random_forest_model_results.png" width="472">
 
 ### Accuracy Scores of each Machine Learning model
 We mainly focused on tracking the accuracy score of each model. A summary of each model's accuracy score is shown below:
 | Model | Accuracy Score |
 | :---- | :------------- |
-| Balanced Random Forest Classifier | 82.37% |
-| Deep Neural Network | 81.09% |
-| Easy Ensemble AdaBoost Classifier | 79.26% |
-| Logistic Regression | 76.02% |
-| Decision Tree | 74.55% |
+| Balanced Random Forest Classifier | 81.99% |
+| Deep Neural Network | 79.80% |
+| Easy Ensemble AdaBoost Classifier | 79.41% |
+| Logistic Regression | 76.34% |
+| Decision Tree | 74.07% |
 
-### Conclusion: Balanced Random Forest Classifier
-To conclude, this machine learning model addresses our machine learning questions and can predict the danceability of Spotify songs with an accuracy of 82.37%. During the machine learning optimzation phase, it was essential to keep the previously dropped numerical columns (*year* and *duration_ms*) and to scale the data with StandardScaler. Changing the number of trees in the forest model from 100 to 500 also improved its accuracy. 
+### Conclusion
+To conclude, the Balanced Random Forest Classifier addressed our machine learning questions and predicted the danceability of Spotify songs with an accuracy of 81.99%. During the machine learning optimzation phase, it was essential to keep the previously dropped numerical columns (*year* and *duration_ms*) and to scale the data with StandardScaler. Changing the number of trees in the forest model from 100 to 256 also improved the accuracy of the model. 
 
 ## Database
 
