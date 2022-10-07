@@ -149,7 +149,7 @@ The accuracy scores and classification report for our sample Random Forest Class
 ### Accuracy Scores of each Machine Learning model
 We mainly focused on tracking the accuracy score of each model. A summary of each model's accuracy score is shown below:
 | Model | Accuracy Score |
-| :---- | :------------- |
+| :---- | -------------- |
 | Balanced Random Forest Classifier | 81.99% |
 | Deep Neural Network | 79.80% |
 | Easy Ensemble AdaBoost Classifier | 79.41% |
