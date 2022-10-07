@@ -202,6 +202,7 @@ The line chart shows the actual and predicted values over the years
 ### Link to Google Slides Presentation
 [Presentation](https://docs.google.com/presentation/d/1SLyJo5VTJr1ISsJsDj2ul_97DUWQovaDkD5HBMjirlo/edit?usp=sharing)
 
-
-
-
+## Questions Answered
+* Machine learning models can successfully predict the danceability of the songs with an accuracy of 82.37%.
+* From the Machine learning and dashboard, we can conclude that danceability has increased over the years and energy has an effect on danceability i.e The higher the Energy, the higher the danceability of the song.
+* From the Tableau story, we can see that some factors like Energy, Valence, Mode and Tempo can predict the danceability of a song.
