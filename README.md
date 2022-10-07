@@ -25,7 +25,7 @@
 ### Reasons for Selected Topic
 
 - **Mutual Interest** - Music is a popular topic and a common interest amongst the team. Although we like different genres we all listen to music on a daily basis and has become an important factor in our lives
-- **Growing Industry** - The music industry is continuously growing and nhas become more accessible than ever with multiple streaming options. Spotify recorded 188 million Spotify premium subscribers in the second quarter of 2022 and has 60,000 songs being uploaded every day
+- **Growing Industry** - The music industry is continuously growing and has become more accessible than ever with multiple streaming options. Spotify recorded 188 million Spotify premium subscribers in the second quarter of 2022 and has 60,000 songs being uploaded every day
 - **Interested in Learning** - How the danceability of songs have changed over time and if a machine learning can predict the danceability of a song based on different factors
 
 ### Description of Dataset Source
@@ -157,7 +157,7 @@ We mainly focused on tracking the accuracy score of each model. A summary of eac
 | Decision Tree | 74.07% |
 
 ### Conclusion
-To conclude, the Balanced Random Forest Classifier addressed our machine learning questions and predicted the danceability of Spotify songs with an accuracy of 81.99%. During the machine learning optimzation phase, it was essential to keep the previously dropped numerical columns (*year* and *duration_ms*) and to scale the data with StandardScaler. Changing the number of trees in the forest model from 100 to 256 also improved the accuracy of the model. 
+To conclude, the Balanced Random Forest Classifier addressed our machine learning questions and predicted the danceability of Spotify songs with an accuracy of 81.99%. During the machine learning optimization phase, it was essential to keep the previously dropped numerical columns (*year* and *duration_ms*) and to scale the data with StandardScaler. Changing the number of trees in the forest model from 100 to 256 also improved the accuracy of the model. 
 
 ## Database
 
@@ -191,7 +191,7 @@ According to the picture below, there are 169,909 songs in the spotify dataset.
 
 ![number of songs](https://user-images.githubusercontent.com/104453593/192681719-56d25d32-cfad-459d-a7e2-7444d42bea6a.PNG)
 
-#### Danceablity over the years: 
+#### Danceability over the years: 
 The line chart below shows that danceability has increased throughout the years (from 1921-2020)
 * the x-axis represents the Year field;
 * the y-axis represents the Danceability field; 
@@ -213,7 +213,7 @@ The line chart below shows that Energy has an effect on Danceability
 #### Predicted vs Actual Values for Machine Learning
 The line chart shows the actual and predicted values over the years
 * x-axis represents the Year field;
-* y-axis on the left represnts Y Actual;
+* y-axis on the left represents Y Actual;
 * y-axis on the right represents Y Pred;
 * The legend shows that the blue line represents Y Actual and 
 * the orange line represents Y Pred. 
