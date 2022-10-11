@@ -227,7 +227,7 @@ The line chart shows the actual and predicted values over the years
 [Tableau Dashboard](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyDanceabilityDATASETovertheyears/FinalDashboard?publish=yes)
 
 ### Link to Tableau Story
-[Tableau Story](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyChangeinDanceabilityDashboardOverview/Story3?publish=yes)
+[Tableau Story](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyDanceabilityStoryovertheyears/SpotifyDatasetandfactorsaffectingDanceability?publish=yes)
 
 ### Link to Google Slides Presentation
 [Presentation](https://docs.google.com/presentation/d/1SLyJo5VTJr1ISsJsDj2ul_97DUWQovaDkD5HBMjirlo/edit?usp=sharing)
