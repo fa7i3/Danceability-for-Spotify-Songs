@@ -38,7 +38,7 @@
 * Can machine learning models predict the danceability of Spotify songs using audio feature information?
 * How has danceability changed throughout the years from 1921 to 2020?
 * How danceable or energetic a song is?
-* How various factors can predict the danceability of a song.
+* How various factors can predict the danceability of a song?
 
 ## Machine Learning Model
 
