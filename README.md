@@ -14,14 +14,6 @@
 
 ### Topic: Danceability of Spotify Songs from 1921 to 2020
 
-### Softwares Used
-* Jupyter Notebook
-* ERD (Entity Relationship Diagram) Tool
-* pgAdmin
-* Tableau Public
-* Languages (Python, SQL)
-* Dependencies (sqlalchemy, Pandas, TensorFlow, Scikit-learn)
-
 ### Reasons for Selected Topic
 
 - **Mutual Interest** - Music is a popular topic and a common interest amongst the team. Although we like different genres we all listen to music on a daily basis and has become an important factor in our lives
@@ -33,6 +25,14 @@
 * Columns include general song information and [song features](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features) which contain audio feature information for each unique Spotify Id
 * Data was collected from Spotify Web API 
 * Dimension of Original Dataset: 169,909 rows by 19 columns
+
+### Softwares Used
+* Jupyter Notebook
+* ERD (Entity Relationship Diagram) Tool
+* pgAdmin
+* Tableau Public
+* Languages (Python, SQL)
+* Dependencies (sqlalchemy, Pandas, TensorFlow, Scikit-learn)
 
 ### Questions we hope to answer
 * Can machine learning models predict the danceability of Spotify songs using audio feature information?
@@ -185,7 +185,7 @@ We plan to use Tableau Public to create the final dashboard for the project. Few
 The final dashboard will show the number of songs, how danceability has changed throughout the years, show some factors that affects it and machine learning. 
 
 ## Tableau Public
-The story contains the following information:
+The dashboard and story contains the following information:
 #### Number of songs in the dataset: 
 According to the picture below, there are 169,909 songs in the spotify dataset.
 
@@ -219,20 +219,20 @@ The line chart shows the actual and predicted values over the years
 * the orange line represents Y Pred. 
 * The line graph shows that the Actual and Predicted values over the years are similar and accurate.
 
-![predictions vs actual pic](https://user-images.githubusercontent.com/104453593/193964113-78025012-7725-4e1b-8b1e-34058be17747.PNG)
+![Machine learning pic music](https://user-images.githubusercontent.com/104453593/194991436-8f80ca81-a0d2-4535-ad44-3fa6ec992db5.PNG)
 
 ## Links
 
 ### Link to Dashboard
-[Tableau Dashboard](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyChangeinDanceabilityDashboardOverview/FinalDashboard?publish=yes)
+[Tableau Dashboard](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyDanceabilityDATASETovertheyears/FinalDashboard?publish=yes)
 
 ### Link to Tableau Story
-[Tableau Story](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyChangeinDanceabilityDashboardOverview/Story3?publish=yes)
+[Tableau Story](https://public.tableau.com/app/profile/faith.emenike/viz/SpotifyDanceabilityStoryovertheyears/SpotifyDatasetandfactorsaffectingDanceability?publish=yes)
 
 ### Link to Google Slides Presentation
 [Presentation](https://docs.google.com/presentation/d/1SLyJo5VTJr1ISsJsDj2ul_97DUWQovaDkD5HBMjirlo/edit?usp=sharing)
 
 ## Questions Answered
-* Machine learning models can successfully predict the danceability of the songs with an accuracy of 82.37%.
+* Machine learning models can successfully predict the danceability of the songs with an accuracy of 81.99%.
 * From the Machine learning and dashboard, we can conclude that danceability has increased over the years and energy has an effect on danceability i.e The higher the Energy, the higher the danceability of the song.
 * From the Tableau story, we can see that some factors like Energy, Valence, Mode and Tempo can predict the danceability of a song.
