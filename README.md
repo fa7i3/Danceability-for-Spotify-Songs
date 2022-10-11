@@ -219,7 +219,7 @@ The line chart shows the actual and predicted values over the years
 * the orange line represents Y Pred. 
 * The line graph shows that the Actual and Predicted values over the years are similar and accurate.
 
-![predictions vs actual pic](https://user-images.githubusercontent.com/104453593/193964113-78025012-7725-4e1b-8b1e-34058be17747.PNG)
+![Machine learning pic music](https://user-images.githubusercontent.com/104453593/194991436-8f80ca81-a0d2-4535-ad44-3fa6ec992db5.PNG)
 
 ## Links
 
