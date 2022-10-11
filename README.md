@@ -128,7 +128,7 @@ To improve the accuracy of the machine learning model, the following changes wer
 ### Steps: Balanced Random Forest Classifier
 The following steps summarize how we created the machine learning model (*[random_forest_classifier.ipynb](Machine_Learning_Model/random_forest_classifier.ipynb)*): 
 
-1. Dropped unnecessary, non-numerical columns
+1. Dropped non-numerical columns
 2. Performed Feature Engineering (new *month* column and removed *duration_ms* outliers)
 2. Encoded the *key* and *month* column with OneHotEncoder()
 3. Split the data into input (X) and output (y) with danceability as the target feature
@@ -146,7 +146,7 @@ The accuracy scores and classification report for our sample Random Forest Class
 * achieved an f1-score of 0.84 for predicting danceability
 <img src="Images/random_forest_model_results.png" width="472">
 
-### Accuracy Scores of each Machine Learning model
+### Final Accuracy Scores of each Machine Learning model
 We mainly focused on tracking the accuracy score of each model. A summary of each model's accuracy score is shown below:
 | Model | Accuracy Score |
 | :---- | -------------- |
@@ -157,7 +157,7 @@ We mainly focused on tracking the accuracy score of each model. A summary of eac
 | Decision Tree | 74.07% |
 
 ### Conclusion
-To conclude, the Balanced Random Forest Classifier addressed our machine learning questions and predicted the danceability of Spotify songs with an accuracy of 81.99%. During the machine learning optimization phase, it was essential to keep the previously dropped numerical columns (*year* and *duration_ms*) and to scale the data with StandardScaler. Changing the number of trees in the forest model from 100 to 256 also improved the accuracy of the model. 
+To conclude, the Balanced Random Forest Classifier addressed our machine learning questions and predicted the danceability of Spotify songs with an accuracy of 81.99%. During the machine learning optimization phase, it was essential to keep the previously dropped numerical columns (*year* and *duration_ms*) and to scale the data with StandardScaler. Changing the number of trees in the forest model from 100 to 256 also improved the accuracy of the model. In the next phase of this project, statistical analysis should be performed to discover patterns and trends in the dataset. Statistical tests, such as the paired t-test, could determine if there was a statistical difference for continous features (ex. energy, liveness, valance, etc.) between two years (ex. 1980 vs. 2020). 
 
 ## Database
 
