@@ -118,7 +118,7 @@ From the multiple machine learning models that we selected, the Balanced Random 
 
 ### Changes to the Machine Learning Model
 To improve the accuracy of the machine learning model, the following changes were made to the original algorithm:
-* kept the *date* and *duration_ms* columns in the feature dataframe
+* kept the *year* and *duration_ms* columns in the feature dataframe
 * created new *month* column and encoded it
 * removed outliers from the *duration_ms* column
 * used StandardScaler() to scale the data instead of manually scaling the columns
