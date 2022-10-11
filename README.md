@@ -185,7 +185,7 @@ We plan to use Tableau Public to create the final dashboard for the project. Few
 The final dashboard will show the number of songs, how danceability has changed throughout the years, show some factors that affects it and machine learning. 
 
 ## Tableau Public
-The story contains the following information:
+The dashboard and story contains the following information:
 #### Number of songs in the dataset: 
 According to the picture below, there are 169,909 songs in the spotify dataset.
 
