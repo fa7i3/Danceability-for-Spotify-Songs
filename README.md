@@ -14,14 +14,6 @@
 
 ### Topic: Danceability of Spotify Songs from 1921 to 2020
 
-### Softwares Used
-* Jupyter Notebook
-* ERD (Entity Relationship Diagram) Tool
-* pgAdmin
-* Tableau Public
-* Languages (Python, SQL)
-* Dependencies (sqlalchemy, Pandas, TensorFlow, Scikit-learn)
-
 ### Reasons for Selected Topic
 
 - **Mutual Interest** - Music is a popular topic and a common interest amongst the team. Although we like different genres we all listen to music on a daily basis and has become an important factor in our lives
@@ -33,6 +25,14 @@
 * Columns include general song information and [song features](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features) which contain audio feature information for each unique Spotify Id
 * Data was collected from Spotify Web API 
 * Dimension of Original Dataset: 169,909 rows by 19 columns
+
+### Softwares Used
+* Jupyter Notebook
+* ERD (Entity Relationship Diagram) Tool
+* pgAdmin
+* Tableau Public
+* Languages (Python, SQL)
+* Dependencies (sqlalchemy, Pandas, TensorFlow, Scikit-learn)
 
 ### Questions we hope to answer
 * Can machine learning models predict the danceability of Spotify songs using audio feature information?
