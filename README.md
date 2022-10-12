@@ -40,6 +40,21 @@
 * How danceable or energetic a song is?
 * How various factors can predict the danceability of a song?
 
+## Database
+
+We plan to use a SQL database (PostgreSQL and pgAdmin) to store our data. 
+
+Our dataset consists of two tables: 
+- *[spotify_song_info.csv](Resources/spotify_song_info.csv)* which contains general information about each song 
+- *[spotify_song_features.csv](Resources/spotify_song_features.csv)* which contains feature columns and the target column *danceability* that we plan to use for our machine learning model. 
+
+Using pgAdmin two tables were created to store both datasets (*[query](Database/query.sql)*) and joined them to create our third table in order to store the *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)*. 
+
+Using Python Pandas Library in *[final_preprocessing_data .ipynb](Database/final_preprocessing_data.ipynb)*, the two tables were merged into one dataset, which was examined, cleaned, and sent to a PostgreSQL database via a connection string using SQLAlchemy into the merged_spotify_songs table previously created.
+
+The Entity Relationship Diagram for the two tables is shown below:  
+<img src="Images/ERD_spotify_database.png" width=472>
+
 ## Machine Learning Model
 
 ### Purpose
@@ -118,7 +133,7 @@ From the multiple machine learning models that we selected, the Balanced Random 
 
 ### Changes to the Machine Learning Model
 To improve the accuracy of the machine learning model, the following changes were made to the original algorithm:
-* kept the *date* and *duration_ms* columns in the feature dataframe
+* kept the *year* and *duration_ms* columns in the feature dataframe
 * created new *month* column and encoded it
 * removed outliers from the *duration_ms* column
 * used StandardScaler() to scale the data instead of manually scaling the columns
@@ -158,21 +173,6 @@ We mainly focused on tracking the accuracy score of each model. A summary of eac
 
 ### Conclusion
 To conclude, the Balanced Random Forest Classifier addressed our machine learning questions and predicted the danceability of Spotify songs with an accuracy of 81.99%. During the machine learning optimization phase, it was essential to keep the previously dropped numerical columns (*year* and *duration_ms*) and to scale the data with StandardScaler. Changing the number of trees in the forest model from 100 to 256 also improved the accuracy of the model. In the next phase of this project, statistical analysis should be performed to discover patterns and trends in the dataset. Statistical tests, such as the paired t-test, could determine if there was a statistical difference for continous features (ex. energy, liveness, valance, etc.) between two years (ex. 1980 vs. 2020). 
-
-## Database
-
-We plan to use a SQL database (PostgreSQL and pgAdmin) to store our data. 
-
-Our dataset consists of two tables: 
-- *[spotify_song_info.csv](Resources/spotify_song_info.csv)* which contains general information about each song 
-- *[spotify_song_features.csv](Resources/spotify_song_features.csv)* which contains feature columns and the target column *danceability* that we plan to use for our machine learning model. 
-
-Using pgAdmin two tables were created to store both datasets (*[query](Database/query.sql)*) and joined them to create our third table in order to store the *[merged_spotify_songs.csv](Resources/merged_spotify_songs.csv)*. 
-
-Using Python Pandas Library in *[final_preprocessing_data .ipynb](Database/final_preprocessing_data.ipynb)*, the two tables were merged into one dataset, which was examined, cleaned, and sent to a PostgreSQL database via a connection string using SQLAlchemy into the merged_spotify_songs table previously created.
-
-The Entity Relationship Diagram for the two tables is shown below:  
-<img src="Images/ERD_spotify_database.png" width=472>
 
 ## Dashboard
 We plan to use Tableau Public to create the final dashboard for the project. Few reasons why Tableau will be used are:
